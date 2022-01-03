@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./../css/06_1-Selection.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selection</title>
+    </head>
+    
+    <body>
+        <header> SELECTION </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <center>
+                    <h3> IF - ELSE </h3>
+
+                    <div class="LayoutContentInline">
+                        <div class="SectionInlineContent">
+                            <p> (10 x 16) / 4 x 2 ?</p>
+                            <button id="layer11-button1" onclick="event_Layer11('pil1')"> 20 </button>
+                            <button id="layer11-button2" onclick="event_Layer11('pil2')"> 80 </button>
+                        </div>
+    
+                        <div class="SectionInlineContent">
+                            <p> Apa singkatan dari PHP ?</p>
+                            <input id="layer21-jawaban" type="text" name="layer21-jawaban1" placeholder="PHP" onfocus="if(this.value=='PHP') this.value=' '" onblur="if(this.value==' ') this.value=''">
+                            <br><br>
+                            <button id="layer21-button" onclick="event_Layer12(document.getElementById('layer21-jawaban').value)"> JAWAB </button>
+                        </div>
+
+                        <div class="SectionInlineContent">
+                            <p> 9 - 1 + 4 / 2 * 2 &emsp13; ?</p>
+                            <button id="layer11-button1" onclick="event_Layer13('pil1')"> 12 </button>
+                            <button id="layer11-button2" onclick="event_Layer13('pil2')"> 7 </button>
+                        </div>
+                    </div>
+                </center>
+            </div>
+            
+            <div class="LayoutParent">
+                <center>
+                    <h3> IF - ELSE IF </h3>
+
+                    <div class="SectionBlockContent">
+                        <p> Silahkan pilih model soal : </p>
+                        <button id="layer2-button1" onclick="event_Layer2('IPA')"> IPA </button>                        
+                        <button id="layer2-button2" onclick="event_Layer2('Matematika')"> Matematika </button>
+                        <button id="layer2-button3" onclick="event_Layer2('IPS')"> IPS </button>                        
+                    </div>                        
+                </center>
+            </div>
+
+            <div class="LayoutParent">
+                <center>
+                    <h3> IF - ELSE IF - ELSE </h3>
+
+                    <div class="SectionBlockContent" style="margin-bottom: -10px;">
+                        <p> Masukkan NIM :</p>
+                        <input id="layer3-jawaban" type="text" name="layer3-pilihan" placeholder="NIM" onfocus="if(this.value=='NIM') this.value=' '" onblur="if(this.value==' ') this.value=''">
+                        <br><br>
+                        <button id="layer3-button3" onclick="event_Layer3(document.getElementById('layer3-jawaban').value)"> LIHAT BIODATA </button>                        
+                    </div>                        
+                </center>
+            </div>
+
+            <div class="LayoutParent">
+                <center>
+                    <h3> SWITCH CASE </h3>
+
+                    <div class="SectionBlockContent" style="margin-bottom: -10px;">
+                        <p> Masukkan Nama : </p>
+                        <input id="layer4-jawaban" type="text" name="layer4-pilihan" placeholder="Nama" onfocus="if(this.value=='Nama') this.value=' '" onblur="if(this.value==' ') this.value=''">
+                        <br><br>
+                        <button id="layer4-button" onclick="event_Layer4(document.getElementById('layer4-jawaban').value)"> LIHAT HASIL UJIAN </button>
+                    </div>
+                </center>
+            </div>
+
+            <div id="FlowPage">
+                <div>
+                    <img src="./../src/Images/IC_NextPage.png" onclick="location.href='./06_2-NestedSelection.html';" width="80px" height="80px">
+                    <p> NEXT </p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="./../js/06_1-Selection.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+

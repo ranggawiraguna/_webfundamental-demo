@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/04 - DOM-Travesal.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Traversal</title>
+    </head>
+    
+    <body>
+        <header> DOM TRAVERSAL </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h3> parentNode </h3>
+                <p> (Method ini akan mengambil node parent dari suatu elemen) </p>
+                <p> (Jadi jika kita memberikan event terhadap suatu elemen, tetapi yang kita ingin rubah perilaku parentnya maka bisa guanakan method ini) </p>
+                <p> (Node disini dimaksudkan dengan seluruh HTML script termasuk sebuah text ataupun enter) </p>
+                <p> (return node) </p>
+                <div class="ContainerLayer">
+                    <div>
+                        <div class="Card">
+                            <span class="image">😎</span>
+                            <span>
+                                <p class="name">Agus</p>
+                                <p class="number">(0812345678)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😁</span>
+                            <span>
+                                <p class="name">Udin</p>
+                                <p class="number">(0818293912)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😝</span>
+                            <span>
+                                <p class="name">Otong</p>
+                                <p class="number">(0891238198)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">🧐</span>
+                            <span>
+                                <p class="name">Ucup</p>
+                                <p class="number">(0891289282)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+
+                        <p> Click icon paint for change background parent</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> parentElement </h3>
+                <p> (Method ini akan mengambil node parent dari suatu elemen) </p>
+                <p> (Jadi jika kita memberikan event terhadap suatu elemen, tetapi yang kita ingin rubah perilaku parentnya maka bisa guanakan method ini) </p>
+                <p> (Berbeda dengan Node, elemen pasti akan mengambil suatu elemen tanpa memperdulikan Node) </p>
+                <p> (return element) </p>
+                <div class="ContainerLayer">
+                    <div>
+                        <div class="Card">
+                            <span class="image">😎</span>
+                            <span>
+                                <p class="name">Agus</p>
+                                <p class="number">(0812345678)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😁</span>
+                            <span>
+                                <p class="name">Udin</p>
+                                <p class="number">(0818293912)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😝</span>
+                            <span>
+                                <p class="name">Otong</p>
+                                <p class="number">(0891238198)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">🧐</span>
+                            <span>
+                                <p class="name">Ucup</p>
+                                <p class="number">(0891289282)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+
+                        <p> Click icon paint for change background parent</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> nextSibling </h3>
+                <p> (Method ini dapat mengambil node setelahnya yang berada pada parent yang sama) </p>
+                <p> (Karena node juga mengambil text ataupun enter, jadi jika kita mengambil node perhatikan text dan enter pada isi parent yang sama) </p>
+                <p> (return node) </p>
+                <div class="ContainerLayer">
+                    <div>
+                        <div class="Card">
+                            <span class="image">😎</span>
+                            <span>
+                                <p class="name">Agus</p>
+                                <p class="number">(0812345678)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😁</span>
+                            <span>
+                                <p class="name">Udin</p>
+                                <p class="number">(0818293912)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😝</span>
+                            <span>
+                                <p class="name">Otong</p>
+                                <p class="number">(0891238198)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">🧐</span>
+                            <span>
+                                <p class="name">Ucup</p>
+                                <p class="number">(0891289282)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+
+                        <p> Double-Click icon paint for change next 2-Node background parent</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> nextElementSibling </h3>
+                <p> (Method ini dapat mengambil element setelahnya yang berada pada parent yang sama) </p>
+                <p> (Karena ini akan mengmbalikan element, sudah dipastikan yang terpilih adalah suatu element, jadi node disini tidak diperdulikan) </p>
+                <p> (return element) </p>
+                <div class="ContainerLayer">
+                    <div>
+                        <div class="Card">
+                            <span class="image">😎</span>
+                            <span>
+                                <p class="name">Agus</p>
+                                <p class="number">(0812345678)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😁</span>
+                            <span>
+                                <p class="name">Udin</p>
+                                <p class="number">(0818293912)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😝</span>
+                            <span>
+                                <p class="name">Otong</p>
+                                <p class="number">(0891238198)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">🧐</span>
+                            <span>
+                                <p class="name">Ucup</p>
+                                <p class="number">(0891289282)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+
+                        <p> Click icon paint for change next element background parent</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> previousSibling </h3>
+                <p> (Method ini dapat mengambil node sebelumnya yang berada pada parent yang sama) </p>
+                <p> (Karena node juga mengambil text ataupun enter, jadi jika kita mengambil node perhatikan text dan enter pada isi parent yang sama) </p>
+                <p> (return node) </p>
+                <div class="ContainerLayer">
+                    <div>
+                        <div class="Card">
+                            <span class="image">😎</span>
+                            <span>
+                                <p class="name">Agus</p>
+                                <p class="number">(0812345678)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😁</span>
+                            <span>
+                                <p class="name">Udin</p>
+                                <p class="number">(0818293912)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😝</span>
+                            <span>
+                                <p class="name">Otong</p>
+                                <p class="number">(0891238198)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">🧐</span>
+                            <span>
+                                <p class="name">Ucup</p>
+                                <p class="number">(0891289282)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <p> Double-Click icon paint for change next 2-Node background parent</p>                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> previousElementSibling </h3>
+                <p> (Method ini dapat mengambil element sebelumnya yang berada pada parent yang sama) </p>
+                <p> (Karena ini akan mengmbalikan element, sudah dipastikan yang terpilih adalah suatu element, jadi node disini tidak diperdulikan) </p>
+                <p> (return element) </p>
+                <div class="ContainerLayer">
+                    <div>
+                        <div class="Card">
+                            <span class="image">😎</span>
+                            <span>
+                                <p class="name">Agus</p>
+                                <p class="number">(0812345678)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😁</span>
+                            <span>
+                                <p class="name">Udin</p>
+                                <p class="number">(0818293912)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😝</span>
+                            <span>
+                                <p class="name">Otong</p>
+                                <p class="number">(0891238198)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+                        <div class="Card">
+                            <span class="image">🧐</span>
+                            <span>
+                                <p class="name">Ucup</p>
+                                <p class="number">(0891289282)</p>
+                            </span>
+                            <span class="btn">🎨</span>
+                        </div>
+
+                        <p> Click icon paint for change next element background parent</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/04 - DOM-Travesal.js"></script>
+</html>

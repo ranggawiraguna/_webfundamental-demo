@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/__tools.css">
+    <link rel="stylesheet" href="./../css/05 - Position_1.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Position</title>
+    </head>
+    
+    <body>
+        <header> POSITION 1 </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h2> Static </h2>
+                <p> (Layout dengan posisi static akan berada pada posisi normal dan bergerak secara normal flow / linear) </p>
+                <div>
+                    <div> static </div>
+                    <div> static </div>
+                    <div> static </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Relative </h2>
+                <p> (Layout dengan posisi relative akan berada pada dimensi yang berbeda dari parentnya) </p>
+                <p> (akan tetapi layout relative masih tetap mengambil tempat pada parentnya) </p>
+                <div>
+                    <div> static </div>
+                    <div> relative </div>
+                    <div> static </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Absolute </h2>
+                <p> (Layout dengan posisi absolute akan berada pada dimensi yang berbeda dari parentnya) </p>
+                <p> (dan juga layout ini tidak dapat menempel pada parent yang static, tetapi dapat menempel pada parent relative) </p>
+                <p> (meskipun dapat menempel pada relative, tetapi absolte tetap tidak mengambil tempat pada parent relatinya) </p>
+                <p> (posisi pada layout ini akan mengikuti posisi semua dari normal flow parentnya) </p>
+                <div>
+                    <div> static </div>
+                    <div> absolute </div>
+                    <div> static </div>
+                </div>
+            </div>
+
+            <div class="LayoutFixed">
+                <!-- 
+                    Layout ini akan berada pada posisi fix parentnya, posisi default yaoitu pada top=0 dan left=0  pada prentnya 
+                    dan juga jika terdapat scrollview pada aprenya maka elemen fixed tidak akan berpengaruh pada scrolling parentya
+                -->
+
+                *this layout position is fixed! 
+            </div>
+        </div>    
+    </body>
+</html>
+
+
+
+
+

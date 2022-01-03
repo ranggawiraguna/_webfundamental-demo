@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/03 - BoxModel_2.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Model</title>
+    </head>
+    
+    <body>
+        <header> BOX MODEL 2 </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h2> Padding </h2>
+                <p> (Properti yang membuat content didalam layout memiliki jarak dari tepi layoutnya)</p>
+                <p> (dan properti ini membuat ukuran box dari layout menjadi bertambah)</p>
+                <div>
+                    <div>
+                        <span> Content Layout-1 </span>
+                    </div>
+
+                    <div>
+                        <span> Content Layout-2 </span>
+                    </div>
+
+                    <div>
+                        <span> Content Layout-3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Border </h2>
+                <p> (Properti yang membuat garis tepi pada layout)</p>
+                <p> (dan properti ini juga membuat ukuran box dari layout menjadi bertambah)</p>
+                <div>
+                    <div>
+                        <span> Content Layout-1 </span>
+                    </div>
+
+                    <div>
+                        <span> Content Layout-2 </span>
+                    </div>
+
+                    <div>
+                        <span> Content Layout-3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Padding & Border </h2>
+                <p> (Penggabungan kedua properti ini akan membuat ukuran dari layout bertambah dengan ukuran padding dan border)</p>
+                <div>
+                    <div>
+                        <span> Content Layout-1 </span>
+                    </div>
+
+                    <div>
+                        <span> Content Layout-2 </span>
+                    </div>
+
+                    <div>
+                        <span> Content Layout-3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Box Sizing :: Content Box </h2>
+                <p> (Properti ini adalah nilai default pada layout, properi ini akan membuat ukuran box layout menyesuaikan isi content didalamnya)</p>
+                <div>
+                    <div>
+                        <span> Content Layout-1 </span>
+                    </div>
+
+                    <div>
+                        <span> Content Layout-2 </span>
+                    </div>
+
+                    <div>
+                        <span> Content Layout-3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Box Sizing :: Border Box </h2>
+                <p> (Properti ini akan membuat ukuran box layout fixed dari ukuran box yang sudah dideklarasikan dan tidak memperdulikan isi content didalamnya)</p>
+                <div>
+                    <div>
+                        <span> Content Layout-1 </span>
+                    </div>
+
+                    <div>
+                        <span> Content Layout-2 </span>
+                    </div>
+
+                    <div>
+                        <span> Content Layout-3</span>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </body>
+</html>
+
+
+
+
+

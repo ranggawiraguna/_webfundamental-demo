@@ -1,0 +1,215 @@
+
+body {
+    background-color: #68CEFF;
+    margin: auto;
+    font-family: 'Alata', sans-serif;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: teal;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    z-index: 9999999;
+}
+
+#MainLayout {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 10%;
+    padding-bottom: 50px;
+}
+
+.LayoutParent {
+    background-color: rgba(100, 250, 200, 80%);
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin: 20px 0;
+}
+
+.LayoutParent * {
+    margin: 0;
+}
+
+.LayoutParent > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 50%);
+    border-radius: 50px;
+    border: 2px solid lightcyan;
+}
+
+.LayoutParent h2, .LayoutParent p {
+    text-align: center;
+}
+
+.LayoutParent h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.LayoutParent p {
+    color: white;
+    margin: 2px;
+}
+
+
+/* Start Styling */
+    .LayoutParent > div > div {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .LayoutParent > div > div img:nth-child(3) {
+        margin-right: 50px;
+    }
+
+    .LayoutParent > div div img:nth-child(3), .LayoutParent > div div img:nth-child(4){
+        border-radius: 10px;
+        border: 2px solid cornflowerblue;
+    } 
+
+    /* Section Layer */
+    .LayoutParent:nth-child(1) img:nth-child(1) {
+        filter: blur(0px);
+    }
+
+    .LayoutParent:nth-child(1) img:nth-child(3) {
+        filter: blur(1px);
+    }
+
+    .LayoutParent:nth-child(1) img:nth-child(4) {
+        filter: blur(3px);
+    }
+
+    /* Section Layer */
+    .LayoutParent:nth-child(2) img:nth-child(1) {
+        filter: brightness(0);
+    }
+
+    .LayoutParent:nth-child(2) img:nth-child(3) {
+        filter: brightness(0.8);
+    }
+
+    .LayoutParent:nth-child(2) img:nth-child(4) {
+        filter: brightness(120%);
+    }    
+
+    /* Section Layer */
+    .LayoutParent:nth-child(3) img:nth-child(1) {
+        filter: contrast(0);
+    }
+
+    .LayoutParent:nth-child(3) img:nth-child(3) {
+        filter: contrast(0.5);
+    }
+
+    .LayoutParent:nth-child(3) img:nth-child(4) {
+        filter: contrast(150%);
+    }    
+
+    /* Section Layer */
+    .LayoutParent:nth-child(4) img:nth-child(1) {
+        filter: saturate(0);
+    }
+
+    .LayoutParent:nth-child(4) img:nth-child(3) {
+        filter: saturate(0.25);
+    }
+
+    .LayoutParent:nth-child(4) img:nth-child(4) {
+        filter: saturate(200%);
+    }    
+
+    /* Section Layer */
+    .LayoutParent:nth-child(5) img:nth-child(1) {
+        filter: grayscale(0);
+    }
+
+    .LayoutParent:nth-child(5) img:nth-child(3) {
+        filter: grayscale(0.25);
+    }
+
+    .LayoutParent:nth-child(5) img:nth-child(4) {
+        filter: grayscale(200%);
+    }    
+    
+    /* Section Layer */
+    .LayoutParent:nth-child(6) img:nth-child(1) {
+        filter: sepia(0);
+    }
+
+    .LayoutParent:nth-child(6) img:nth-child(3) {
+        filter: sepia(0.25);
+    }
+
+    .LayoutParent:nth-child(6) img:nth-child(4) {
+        filter: sepia(200%);
+    }    
+
+    /* Section Layer */
+    .LayoutParent:nth-child(7) img:nth-child(1) {
+        filter: hue-rotate(10deg);
+    }
+
+    .LayoutParent:nth-child(7) img:nth-child(3) {
+        filter: hue-rotate(50deg);
+    }
+
+    .LayoutParent:nth-child(7) img:nth-child(4) {
+        filter: hue-rotate(100deg);
+    }
+
+    /* Section Layer */
+    .LayoutParent:nth-child(8) img:nth-child(1) {
+        filter: invert(0);
+    }
+
+    .LayoutParent:nth-child(8) img:nth-child(3) {
+        filter: invert(0.25);
+    }
+
+    .LayoutParent:nth-child(8) img:nth-child(4) {
+        filter: invert(200%);
+    }
+
+    /* Section Layer */
+    .LayoutParent:nth-child(9) img:nth-child(1) {
+        filter: opacity(1);
+    }
+
+    .LayoutParent:nth-child(9) img:nth-child(3) {
+        filter: opacity(0.25);
+    }
+
+    .LayoutParent:nth-child(9) img:nth-child(4) {
+        filter: opacity(75%);
+    }
+
+    /* Section Layer */
+    .LayoutParent:nth-child(10) img:nth-child(1) {
+        filter: drop-shadow(5px 5px 20px black);
+    }
+
+    .LayoutParent:nth-child(10) img:nth-child(3) {
+        filter: drop-shadow(5px 5px 20px black);
+    }
+
+    .LayoutParent:nth-child(10) img:nth-child(4) {
+        filter: drop-shadow(5px 5px 20px black);
+    }

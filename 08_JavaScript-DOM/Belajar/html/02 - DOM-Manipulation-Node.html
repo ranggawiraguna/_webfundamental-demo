@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/02 - DOM-Manipulation-Node.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Manipulation Node</title>
+    </head>
+    
+    <body>
+        <header> DOM MANIPULATION NODE </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h3>document.createElement()</h3>
+                <p> (Method ini berfungsi untuk membuat suatu elemen HTML baru) </p>
+                <p> (elemen yang dibuat dengan ini tidak langsung masuk kedalam document, perlu ada beberapa langkah supaya dapat memunculkan kedalam tampilan) </p>
+                <div class="ContainerLayer">
+                    <div>
+                        <input placeholder="Masukkan nama elemen">
+                        <button onclick="event_layer1(document.querySelector('.LayoutParent:nth-child(1) .ContainerLayer input').value)">CREATE</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="LayoutParent">
+                <h3>document.createTextNode()</h3>
+                <p> (Method ini berfungsi untuk membuat suatu teks yang akan dimasukkan kedalam innerHTML dalam suatu elemen) </p>
+                <p> (method ini biasa diapakai setelah membuat elemen dengan createElement()) </p>
+                <div class="ContainerLayer">
+                    <div>
+                        <input placeholder="Masukkan text">
+                        <button onclick="event_layer2(document.querySelector('.LayoutParent:nth-child(2) .ContainerLayer input').value)">CREATE</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="LayoutParent">
+                <h3>node.appendChild()</h3>
+                <p> (Method ini berfungsi untuk menambahkan suatu elemen kedalam suatu parent) </p>
+                <p> (Method sebelumnya hanya membuat object saja, nah selanjutnya method ini bekerja untuk memasukkannya kedalam sebuah node) </p>
+                <div class="ContainerLayer">
+                    <div>
+                        <input placeholder="Masukkan nama elemen"> <br>
+                        <input placeholder="Masukkan isi text">
+                        <button onclick="event_layer3(document.querySelector('.LayoutParent:nth-child(3) .ContainerLayer input:nth-child(1)').value, document.querySelector('.LayoutParent:nth-child(3) .ContainerLayer input:nth-child(3)').value)">APPEND</button>    
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="LayoutParent">
+                <h3>parentNode.insertBefore()</h3>
+                <p> (Method ini dapat menyisipkan child pada sebuah parentLayout, dengan posisi yang ditentukan sebelum elemen tertentu) </p>
+                <div class="ContainerLayer">
+                    <div>
+                        <ul>
+                            <li> Rangga Wiraguna </li>
+                            <li> 1803015106 </li>
+                            <li> Teknik Informatika </li>
+                            <li> 2018 </li>
+                        </ul>
+                        <button onclick="event_layer4()">APPEND</button>    
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="LayoutParent">
+                <h3>parentNode.removeChild()</h3>
+                <p> (Method ini dapat menghapus child dari sebuha layout berdasarkan elemen yang terpilih) </p>
+                <div class="ContainerLayer">
+                    <div>
+                        <ul>
+                            <li> Rangga Wiraguna </li>
+                            <li> 1803015106 </li>
+                            <li> Teknik Informatika </li>
+                            <li> 2018 </li>
+                        </ul>
+                        <button onclick="event_layer5()">REMOVE</button>    
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="LayoutParent">
+                <h3>parentNode.replaceChild()</h3>
+                <p> (Method ini dapat mengubah child dari suatu layout menjadi elemen lain yang baru) </p>
+                <div class="ContainerLayer">
+                    <div>
+                        <ul>
+                            <li> Rangga Wiraguna </li>
+                            <li> 1803015106 </li>
+                            <li> Teknik Informatika </li>
+                            <li> 2018 </li>
+                        </ul>
+                        <button onclick="event_layer6()">REPLACE</button>    
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/02 - DOM-Manipulation-Node.js"></script>
+</html>

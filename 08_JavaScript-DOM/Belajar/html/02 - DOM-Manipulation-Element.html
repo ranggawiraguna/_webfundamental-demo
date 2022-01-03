@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/02 - DOM-Manipulation-Element.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Manipulation Elemen</title>
+    </head>
+    
+    <body>
+        <header> DOM MANIPULATION ELEMENT </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h3> element.innerHTML </h3>
+                <p> (Properti ini dapat merubah isi didalam suatu elemen) </p>
+                <p> (Isi yang diberikan dianggap sebagi script html) </p>
+                <div>
+                    <div>
+                        Content is unavailable...
+                    </div>
+                    <div>
+                        <button onclick="event_layer1()">Input to Content</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> element.style.properti </h3>
+                <p> (Properti ini dapat merubah style yang ada pada suatu elemen tergantung properti yang diakses) </p>
+                <p> (Style yang diberikan karena properti ini akan dimasukkan kedalam inline style) </p>
+                <div>
+                    <div>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Aspernatur alias enim veniam distinctio unde. <br> Magnam, distinctio ratione. Quod, laborum corporis!
+                    </div>
+                    <div>
+                        <button onclick="event_layer2(this.innerHTML)">Change<br>Background</button>
+                        <button onclick="event_layer2(this.innerHTML)">Change<br>Color Text</button>
+                        <button onclick="event_layer2(this.innerHTML)">Change<br>Border</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> element.funcAttribute() </h3>
+                <p> (Properti ini dapat mengakses attribut yang ada pada suatu elemen) </p>
+                <p> (Akses attribut dapat dialukan berbagai macam bergantung pada saat pemanggilan method (merubah/menghapus/mendapatkan)) </p>
+                <div>
+                    <div>
+                        <a href="https://www.instagram.com/ranggapx_/" target="_blank"> Click to visit my Instagram! </a>
+                        <!-- https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ranggav66@gmail.com -->
+                    </div>
+                    <div>
+                        <button onclick="event_layer3(this.innerHTML)">Get<br>Attribut</button>
+                        <button onclick="event_layer3(this.innerHTML)">Set<br>Attribut</button>
+                        <button onclick="event_layer3(this.innerHTML)">Remove<br>Attribut</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> element.classList </h3>
+                <p> (Properti ini dapat memanipulasi class yang ada pada suatu elemen) </p>
+                <p> (hampir mirip dengan properti style sebelumnya, hanya saja untuk bagian ini yang diberikan pada elemen adalah suatu class) </p>
+                <p> (sehingga style yang didapat oleh elemen berdasarkan class yang sudah dideklarasikan pada syntax css) </p>
+                <div>
+                    <div>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Aspernatur alias enim veniam distinctio unde. <br> Magnam, distinctio ratione. Quod, laborum corporis!
+                    </div>
+                    <div>
+                        <button onclick="event_layer4(this.innerHTML)">Add</button>
+                        <button onclick="event_layer4(this.innerHTML)">Remove</button>
+                        <button onclick="event_layer4(this.innerHTML)">Toggle</button>
+                        <button onclick="event_layer4(this.innerHTML)">Item</button>
+                        <button onclick="event_layer4(this.innerHTML)">Contains</button>
+                        <button onclick="event_layer4(this.innerHTML)">Replace</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/02 - DOM-Manipulation-Element.js"></script>
+</html>

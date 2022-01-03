@@ -1,0 +1,162 @@
+
+body {
+    background-color: #68CEFF;
+    margin: auto;
+    font-family: 'Alata', sans-serif;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: teal;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}
+
+#MainLayout {
+    position: fixed;
+    overflow: auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 10%;
+    padding-bottom: 100px;
+}
+
+.LayoutParent {
+    background-color: rgba(100, 250, 200, 80%);
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    padding-bottom: 20px;
+    margin: 20px 0;
+}
+
+.LayoutParent * {
+    margin: 0;
+}
+
+.LayoutParent center {
+    margin: 10px auto auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 50%);
+    border-radius: 50px;
+}
+
+.LayoutParent h2, .LayoutParent p {
+    text-align: center;
+}
+
+.LayoutParent p {
+    color: white;
+}
+
+
+
+.LayoutParent:nth-child(1) div {
+    height: 100px;
+
+    display: block;
+    background-color: blanchedalmond;
+    margin: 20px auto;
+    border-radius: 50px;
+}
+
+.LayoutParent:nth-child(1) div:nth-child(1){
+    width: 400px;
+}
+
+.LayoutParent:nth-child(1) div:nth-child(2){
+    width: 500px;
+}
+
+.LayoutParent:nth-child(1) div:nth-child(3){
+    width: 600px;
+}
+
+
+
+
+.LayoutParent:nth-child(2) > center{
+    height: 500px;
+}
+
+.LayoutParent:nth-child(2) div {
+    height: 15%;
+
+    display: block;
+    background-color: blanchedalmond;
+    margin: 20px auto;
+    border-radius: 50px;
+}
+
+.LayoutParent:nth-child(2) div:nth-child(1){
+    width: 20%;
+}
+
+.LayoutParent:nth-child(2) div:nth-child(2){
+    width: 40%;
+}
+
+.LayoutParent:nth-child(2) div:nth-child(3){
+    width: 60%;
+}
+
+.LayoutParent:nth-child(2) div:nth-child(4){
+    width: 80%;
+}
+
+.LayoutParent:nth-child(2) div:nth-child(5){
+    width: 100%;
+}
+
+
+
+.LayoutParent:nth-child(3) div {
+    overflow: visible;
+
+    padding: 20px;
+    height: 200px;
+}
+
+
+
+.LayoutParent:nth-child(4) {
+    margin-top: 90px;
+}
+
+.LayoutParent:nth-child(4) div {
+    overflow: hidden;
+
+    padding: 20px;
+    height: 200px;
+}
+
+
+
+.LayoutParent:nth-child(5) div {
+    overflow: scroll;
+
+    padding: 20px;
+    height: 200px;
+}
+
+
+
+.LayoutParent:nth-child(6) div {
+    overflow: auto;
+
+    padding: 20px;
+    height: 200px;
+}
+
+

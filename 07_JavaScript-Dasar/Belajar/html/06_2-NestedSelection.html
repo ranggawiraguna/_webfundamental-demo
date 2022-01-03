@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./../css/06_2-NestedSelection.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selection</title>
+    </head>
+    
+    <body>
+        <header> NESTED SELECTION </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <center>
+                    <h3> NESTED IF </h3>
+
+                    <div class="SectionBlockContent">
+                        <p> Silahkan pilih jurusan teknik : </p>
+                        <button id="layer1-button1" onclick="event_layer1('Elektro')"> Elektro </button>                        
+                        <button id="layer1-button2" onclick="event_layer1('Informatika')"> Informatika </button>
+                        <button id="layer1-button3" onclick="event_layer1('Mesin')"> Mesin </button>                        
+                    </div>                        
+                </center>
+            </div>
+
+            <div class="LayoutParent">
+                <center>
+                    <h3> NESTED SWITCH </h3>
+
+                    <div class="SectionBlockContent">
+                        <p> Silahkan pilih jurusan teknik : </p>
+                        <button id="layer2-button1" onclick="event_layer2('Elektro')"> Elektro </button>                        
+                        <button id="layer2-button2" onclick="event_layer2('Informatika')"> Informatika </button>
+                        <button id="layer2-button3" onclick="event_layer2('Mesin')"> Mesin </button>                        
+                    </div>                        
+                </center>
+            </div>
+
+            <div class="LayoutParent">
+                <center>
+                    <h3> NESTED MIX </h3>
+
+                    <div class="SectionBlockContent">
+                        <p> Silahkan pilih jurusan teknik : </p>
+                        <button id="layer3-button1" onclick="event_layer3('Elektro')"> Elektro </button>                        
+                        <button id="layer3-button2" onclick="event_layer3('Informatika')"> Informatika </button>
+                        <button id="layer3-button3" onclick="event_layer3('Mesin')"> Mesin </button>                        
+                    </div>                        
+                </center>
+            </div>
+
+            <div id="FlowPage">
+                <div>
+                    <img src="./../src/Images/IC_PreviousPage.png" onclick="location.href='./06_1-Selection.html';" width="80px" height="80px">
+                    <p> PREVIOUS </p>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/06_2-NestedSelection.js"></script>
+</html>
+
+
+
+
+

@@ -1,0 +1,282 @@
+
+body {
+    background-color: #68CEFF;
+    margin: auto;
+    font-family: 'Alata', sans-serif;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: teal;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    z-index: 9999999;
+}
+
+#MainLayout {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 10%;
+    padding-bottom: 50px;
+}
+
+.LayoutParent {
+    background-color: rgba(100, 250, 200, 80%);
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin: 20px 0;
+}
+
+.LayoutParent * {
+    margin: 0;
+}
+
+.LayoutParent > div {
+    margin: 20px 50px 10px;
+    padding: 15px 50px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 50%);
+    border-radius: 50px;
+    border: 2px solid lightcyan;
+}
+
+.LayoutParent h2, .LayoutParent p {
+    text-align: center;
+}
+
+.LayoutParent h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.LayoutParent p {
+    color: white;
+    margin: 2px;
+}
+
+.ContainerGrid {
+    margin: 30px auto;
+    box-sizing: border-box;
+    display: grid;
+    width: 100%;
+    border: 3px solid black;
+}
+
+.ContainerGrid > div {
+    background-color: lightgoldenrodyellow;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+/* Start Styling */
+    /* Section Layer */
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(1){
+            height: 300px;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            grid-template-areas: 
+                                "header header header"
+                                "sidebar main-content main-content"
+                                "footer footer footer";
+
+            grid-template-rows: 1fr 5fr 1fr;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(1) > div:nth-child(1){
+            grid-area: header;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(1) > div:nth-child(2){
+            grid-area: sidebar;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(1) > div:nth-child(3){
+            grid-area: main-content;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(1) > div:nth-child(4){
+            grid-area: footer;
+        }
+
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(2){
+            height: 400px;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            grid-template-areas: 
+                                "header header header"
+                                "hero-img hero-img hero-img"
+                                "sidebar main-content main-content"
+                                "footer footer footer";
+
+            grid-template-rows: 1fr 3fr 6fr 1fr;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(2) > div:nth-child(1){
+            grid-area: header;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(2) > div:nth-child(2){
+            grid-area: hero-img;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(2) > div:nth-child(3){
+            grid-area: sidebar;
+        }
+        
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(2) > div:nth-child(4){
+            grid-area: main-content;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(2) > div:nth-child(5){
+            grid-area: footer;
+        }
+
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(3){
+            height: 300px;
+
+            grid-template-columns: 1fr 4fr 2fr;
+
+            grid-template-areas: 
+                                "header header header"
+                                "sidebar-left main-content sidebar-right"
+                                "footer footer footer";
+
+            grid-template-rows: 1fr 3fr 1fr;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(3) > div:nth-child(1){
+            grid-area: header;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(3) > div:nth-child(2){
+            grid-area: sidebar-left;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(3) > div:nth-child(3){
+            grid-area: main-content;
+        }
+        
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(3) > div:nth-child(4){
+            grid-area: sidebar-right;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(3) > div:nth-child(5){
+            grid-area: footer;
+        }
+    /* End Section Layer */
+
+    /* Section Layer */
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(1){
+            height: 300px;
+
+            grid-template:  "header header header" 1fr
+                            "sidebar main-content main-content" 5fr
+                            "footer footer footer" 1fr 
+                            / 
+                            1fr 1fr 1fr;
+        }
+
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(1) > div:nth-child(1){
+            grid-area: header;
+        }
+
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(1) > div:nth-child(2){
+            grid-area: sidebar;
+        }
+
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(1) > div:nth-child(3){
+            grid-area: main-content;
+        }
+
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(1) > div:nth-child(4){
+            grid-area: footer;
+        }
+
+
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(2){
+            height: 300px;
+
+            grid-template:  "header header header" 1fr
+                            "sidebar-left main-content sidebar-right" 3fr
+                            "footer footer footer" 1fr 
+                            / 
+                            1fr minmax(300px, 4fr) 2fr;
+        }
+
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(2) > div:nth-child(1){
+            grid-area: header;
+        }
+
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(2) > div:nth-child(2){
+            grid-area: sidebar-left;
+        }
+
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(2) > div:nth-child(3){
+            grid-area: main-content;
+        }
+        
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(2) > div:nth-child(4){
+            grid-area: sidebar-right;
+        }
+
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(2) > div:nth-child(5){
+            grid-area: footer;
+        }
+    /* End Section Layer */
+
+    /* Section Layer */
+        .LayoutParent:nth-child(3) .ContainerGrid{
+            height: 200px;
+            grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;            
+        }
+
+        .LayoutParent:nth-child(3) .ContainerGrid:nth-child(1){
+            column-gap: 10px;
+        }
+
+        .LayoutParent:nth-child(3) .ContainerGrid:nth-child(2){
+            row-gap: 20px;
+        }
+
+        .LayoutParent:nth-child(3) .ContainerGrid:nth-child(3){
+            gap: 10px 20px;
+        }
+
+        .LayoutParent:nth-child(3) .ContainerGrid:nth-child(4){
+            gap: 20px;
+        }
+    /* End Section Layer */
+
+    /* Section Layer */
+        .LayoutParent:nth-child(4) .ContainerGrid{
+            grid-auto-flow: column;
+        }
+        .LayoutParent:nth-child(4) .ContainerGrid p{
+            color: black;
+            text-align: start;
+        }
+
+    /* End Section Layer */
+
+/* End Styling */

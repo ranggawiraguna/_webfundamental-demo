@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./../css/08_2-Parameter&Argument.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Function</title>
+    </head>
+    
+    <body>
+        <header> PARAMETER & ARGUMENT </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <div>
+                    <h3> Parameter </h3>
+                    <p> (Sebuah variable yang dideklarasikan pada saat pembuatan function) </p>
+                    <p> (variable ini dapat menampung nilai yang diberikan pada saat pemanggilan fungsi sesuai urutannya) </p>
+                    <div class="LayoutContentInline">
+                        <div class="SectionInlineContent">
+                            <p> event_layer11(a,b,c) </p>
+                            <input placeholder="a" onfocus="this.placeholder=''"> 
+                            <input placeholder="b" onfocus="this.placeholder=''"> 
+                            <input placeholder="c" onfocus="this.placeholder=''"> 
+                            <button onclick="event_layer11(document.querySelector('.LayoutParent:nth-child(1) .SectionInlineContent:nth-child(1) input:nth-child(2)').value, document.querySelector('.LayoutParent:nth-child(1) .SectionInlineContent:nth-child(1) input:nth-child(3)').value, document.querySelector('.LayoutParent:nth-child(1) .SectionInlineContent:nth-child(1) input:nth-child(4)').value)"> CALL </button>
+                            <div id="layer11_return" class="return-layer">
+                                <p>Parameter (a) : </p>
+                                <p>Parameter (b) : </p>
+                                <p>Parameter (c) : </p>
+                            </div>
+                        </div>
+                        <div class="SectionInlineContent">
+                            <p> event_layer12(a,b) </p>
+                            <input placeholder="a" onfocus="this.placeholder=''"> 
+                            <input placeholder="b" onfocus="this.placeholder=''"> 
+                            <button onclick="event_layer12(document.querySelector('.LayoutParent:nth-child(1) .SectionInlineContent:nth-child(2) input:nth-child(2)').value, document.querySelector('.LayoutParent:nth-child(1) .SectionInlineContent:nth-child(2) input:nth-child(3)').value)"> CALL </button>
+                            <div id="layer12_return" class="return-layer">
+                                <p>Parameter (a) : </p>
+                                <p>Parameter (b) : </p>
+                                <p>Hasil (a) * (b) : </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <div>
+                    <h3> Argument </h3>
+                    <p> (Sebuah variable array yang ada didalam function yang menyimpan semua nilai yang diberikan pada saat pemanggilan fungsi) </p>
+                    <p> (variable ini akan menyimpan semua yang diberikan tanpa terpengaruh oleh parameter dari function nya) </p>
+                    <div class="SectionBlockContent">
+                        <div>
+                            <p> event_layer21(a,b) </p>
+                            <input placeholder="a" onfocus="this.placeholder=''"> 
+                            <input placeholder="b" onfocus="this.placeholder=''"> 
+                            <input placeholder="c" onfocus="this.placeholder=''"> 
+                            <input placeholder="d" onfocus="this.placeholder=''"> 
+                            <input placeholder="e" onfocus="this.placeholder=''"> 
+                            <button onclick="event_layer21(document.querySelector('.LayoutParent:nth-child(2) .SectionBlockContent:nth-child(4) input:nth-child(2)').value, document.querySelector('.LayoutParent:nth-child(2) .SectionBlockContent:nth-child(4) input:nth-child(3)').value, document.querySelector('.LayoutParent:nth-child(2) .SectionBlockContent:nth-child(4) input:nth-child(4)').value, document.querySelector('.LayoutParent:nth-child(2) .SectionBlockContent:nth-child(4) input:nth-child(5)').value, document.querySelector('.LayoutParent:nth-child(2) .SectionBlockContent:nth-child(4) input:nth-child(6)').value)"> CALL </button>
+                            <div id="layer21_return" class="return-layer">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="FlowPage">
+                <div>
+                    <img src="./../src/Images/IC_PreviousPage.png" onclick="location.href='./08_1-Function.html';" width="80px" height="80px">
+                    <p> PREVIOUS </p>
+                </div>
+                <div>
+                    <img src="./../src/Images/IC_NextPage.png" onclick="location.href='./08_3-Rekursif.html';" width="80px" height="80px">
+                    <p> NEXT </p>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/08_2-Parameter&Argument.js"></script>
+</html>
+
+
+
+
+

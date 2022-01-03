@@ -1,0 +1,187 @@
+
+body {
+    background-color: #68CEFF;
+    margin: auto;
+    font-family: 'Alata', sans-serif;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: teal;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    z-index: 9999999;
+}
+
+#MainLayout {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 10%;
+    padding-bottom: 50px;
+}
+
+.LayoutParent {
+    background-color: rgba(100, 250, 200, 80%);
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin: 20px 0;
+}
+
+.LayoutParent * {
+    margin: 0;
+}
+
+.LayoutParent > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 50%);
+    border-radius: 50px;
+    border: 2px solid lightcyan;
+}
+
+.LayoutParent h2, .LayoutParent p {
+    text-align: center;
+}
+
+.LayoutParent h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.LayoutParent p {
+    color: white;
+    margin: 2px;
+}
+
+/* Start Styling */
+    .LayoutParent > div  div {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        margin: 20px;
+        border: 2px solid darkseagreen;
+        transition: 1s;
+        text-align: center;
+        line-height: 150px;
+    }
+
+    /* Section Layer */
+    .LayoutParent:nth-child(1) > div  div {
+        background-color: salmon;
+    }
+
+    .LayoutParent:nth-child(1) > div  div:nth-child(1):hover {
+        transform: scaleX(2);
+    }
+
+    .LayoutParent:nth-child(1) > div  div:nth-child(2):hover {
+        transform: scaleY(2);
+    }
+
+    .LayoutParent:nth-child(1) > div  div:nth-child(3):hover {
+        transform: scale(2);
+    }
+
+    .LayoutParent:nth-child(1) > div  div:nth-child(4):hover {
+        transform: scale(2, 1);
+    }
+
+    /* Section Layer */
+    .LayoutParent:nth-child(2) > div  div {
+        background-color: lightseagreen;
+    }
+
+    .LayoutParent:nth-child(2) > div  div:nth-child(1):hover {
+        transform: rotateX(180deg);
+    }
+
+    .LayoutParent:nth-child(2) > div  div:nth-child(2):hover {
+        transform: rotateY(180deg);
+    }
+
+    .LayoutParent:nth-child(2) > div  div:nth-child(3):hover {
+        transform: rotate(225deg);
+    }
+
+    .LayoutParent:nth-child(2) > div  div:nth-child(4):hover {
+        transform: rotateX(180deg) rotateY(180deg) rotate(180deg);
+    }
+
+
+    /* Section Layer */
+    .LayoutParent:nth-child(3) > div  div {
+        background-color: cyan;
+    }
+
+    .LayoutParent:nth-child(3) > div  div:nth-child(1):hover {
+        transform: skewX(45deg);
+    }
+
+    .LayoutParent:nth-child(3) > div  div:nth-child(2):hover {
+        transform: skewX(-45deg);
+    }
+
+    .LayoutParent:nth-child(3) > div  div:nth-child(3):hover {
+        transform: skewY(135deg);
+    }
+
+    .LayoutParent:nth-child(3) > div  div:nth-child(4):hover {
+        transform: skewY(-135deg);
+    }
+
+    .LayoutParent:nth-child(3) > div  div:nth-child(5):hover {
+        transform: skew(245deg);
+    }
+
+    /* Section Layer */
+    .LayoutParent:nth-child(4) > div  div {
+        background-color: lightcoral;
+    }
+
+    .LayoutParent:nth-child(4) > div  div:nth-child(1):hover {
+        transform: translateX(50px);
+    }
+
+    .LayoutParent:nth-child(4) > div  div:nth-child(2):hover {
+        transform: translateY(50px);
+    }
+
+    .LayoutParent:nth-child(4) > div  div:nth-child(3):hover {
+        transform: translate(50px);
+    }
+
+    .LayoutParent:nth-child(4) > div  div:nth-child(4):hover {
+        transform: translate(25px, 50px);
+    }
+
+    /* Section Layer */
+    .LayoutParent:nth-child(5) > div  div {
+        background-color: lightgoldenrodyellow;
+    }
+
+    .LayoutParent:nth-child(5) > div  div:nth-child(1):hover {
+        transform: scale(2) rotate(360deg);
+    }
+
+    .LayoutParent:nth-child(5) > div  div:nth-child(2):hover {
+        transform: translateY(50px) skew(10deg);
+    }
+
+    .LayoutParent:nth-child(5) > div  div:nth-child(3):hover {
+        transform: scale(2) rotate(360deg) translateY(50px) skew(10deg);
+    }

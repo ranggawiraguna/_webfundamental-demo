@@ -1,0 +1,57 @@
+body {
+    font-family: 'Product Sans';
+    background-color: #FFFBDF;
+    margin: auto;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #B5768A;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}
+
+#MainContent {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    margin: auto;
+    padding: 20px 30px 20px 30px;
+}
+
+#fShortHand {
+    font: italic small-caps bold 18px 'ProductSans', sans-serif;
+}
+
+#f1 {
+    font-family: 'Monserat';
+}
+
+#f2 {
+    font-size: 18px;
+}
+
+#f3 {
+    font-weight: bold;
+}
+
+#f4 {
+    font-variant: small-caps;
+}
+
+#f5 {
+    font-style: italic;
+}
+
+#f6 {
+    line-height: 20px;
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/03 - Closure.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Closure</title>
+    </head>
+    
+    <body>
+        <header> CLOSURE </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h3> Basic Closure  </h3>
+                <p> (Teknik yang melakukan pembuatan suatu function didalam function) </p>
+                <p> (Function yang dideklarasikan didalam function tersebut mengakses variable scope pada parentnya, hal inilah yang disebut dengan closure) </p>
+                <p> (Function inner dapat digunakan oleh banyak banyak variable dengan cara menduplikatnya kedalam suatu variable) </p>
+                <div>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="LayoutParent">
+                <h3> Var Closure & Var Local innerFunction </h3>
+                <p> (Dalam hal ini terdapat beberapa variable didalam inner function, ada yang merupakan variable closure dari parent functionnya, ada juga yang hanya merupakan scope dari function innnernya ) </p>
+                <p> (Hal ini memungkinkan semua variable yang menduplikat function inner akan memakai satu variable closure yang sama, artinya jika terjadi perubahan variable closure didalam innerFunction maka tidak mempengaruhi variable asli dari parent functionnya) </p>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="LayoutParent">
+                <h3> Closure Kompleks </h3>
+                <p> (Teknik ini adalah cara pembuatan dan penggunaan closure yang paling kompleks) </p>
+                <p> (Function outer hanya langsung dijalankan dan hanya sekali, sedangkan function innernya dapat dijalankan berkali-kali) </p>
+                <p> (walaupun hanya dijalankan sekali, semua yang terjadi pada function outer dapat diakses kembali oleh innerFunctionnya) </p>
+                <p> (Hal ini mirip seperti konsep class dan variable static pada bahasa pemrograman lainnya) </p>
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/03 - Closure.js"></script>
+</html>

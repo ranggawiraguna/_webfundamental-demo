@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./../css/14 - CSS - Specificity.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Specificity</title>
+        <!-- 
+            Perhitung specificity :
+            | inline | id | class | element |
+            |        |    |       |         |
+
+            hitung berat pada pendeklarasian style css yang memiliki berat paling besar akan dipilih untuk style element yang bersangkutan
+        -->
+
+    </head>
+    <body>
+        <header> SPECIFICITY </header>
+
+        <div id="MainContent" class="MainContent">
+            <ol class="Listing">
+                <h3> Daftar-1 </h3>
+                <li class="firstData"> Rangga Wiraguna </li>
+                <li> Fasya Nazihah </li>
+                <li> Agus Budiantoro </li>
+            </ol>
+
+            <ul class="Listing">
+                <h3> Daftar-2 </h3>
+                <li class="firstData"> Rangga Wiraguna </li>
+                <li> Fasya Nazihah </li>
+                <li> Agus Budiantoro </li>
+            </ul>
+
+            <div class="Notes">
+                <h4> NOTES </h4>
+
+                <h4 id="titleSatu" class="title"> SATU </h4>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos fugit quis nihil ad, quibusdam optio maxime officiis beatae vero at eaque, praesentium dolores eum omnis numquam aperiam atque quae!</p>
+
+                <h4 id="titleDua" class="title"> DUA </h4>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos fugit quis nihil ad, quibusdam optio maxime officiis beatae vero at eaque, praesentium dolores eum omnis numquam aperiam atque quae!</p>                
+
+                <h4 id="titleTiga" class="title"> TIGA </h4>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos fugit quis nihil ad, quibusdam optio maxime officiis beatae vero at eaque, praesentium dolores eum omnis numquam aperiam atque quae!</p>
+            </div>
+        </div>
+    </body>
+</html>
+
+

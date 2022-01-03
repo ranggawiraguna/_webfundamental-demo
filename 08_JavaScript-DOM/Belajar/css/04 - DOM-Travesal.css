@@ -1,0 +1,197 @@
+/* CSS Reset & Class Clear Float */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, nav  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+nav { display: block; }
+
+body { line-height: 1; }
+
+ul { list-style: none; }
+
+a { text-decoration: none;}
+
+.cf::after, .cf::before{
+    display: table;
+    content: " ";
+}
+
+.cf{ *zoom: 1; }
+
+.cf::after{ clear: both; }
+
+
+
+/* CSS Reset & Class Clear Float */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, nav  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+nav { display: block; }
+
+body { line-height: 1; }
+
+a { text-decoration: none;}
+
+.cf::after, .cf::before{
+    display: table;
+    content: " ";
+}
+
+.cf{ *zoom: 1; }
+
+.cf::after{ clear: both; }
+
+
+/* Statr Styling */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgb(143, 255, 255);
+    margin: auto;
+} 
+
+header {
+    font-family: 'Alata', sans-serif;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: lightseagreen;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 50%);
+}
+
+#MainLayout {
+    position: fixed;
+    overflow: auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 10%;
+    padding-bottom: 100px;
+}
+
+.LayoutParent {
+    background-color: lightcyan;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.LayoutParent > h3 {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.LayoutParent > p {
+    color: black;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    background-color: cornflowerblue;
+    padding: 5px 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    border: none;
+    outline: 0 !important;
+    cursor: pointer;
+    margin: 5px 10px auto;
+}
+
+button:hover {
+    color: black;
+    background-color: lightskyblue;
+}
+
+input {
+    display: inline-block;
+    background-color: white;
+    width: 300px;
+    height: 30px;
+    padding: 0px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    outline: 0 !important;
+}  
+
+.LayoutParent .ContainerLayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.LayoutParent .ContainerLayer > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    width: 600px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: lightcoral;
+}
+
+.Card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin: 20px;
+    background-color: lightskyblue;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 1000px;
+}
+
+.Card p {
+    text-align: center;
+}
+
+.Card .image {
+    font-size: 2em;
+}
+
+.Card .btn {
+    font-size: 1.2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.Card .btn:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,564 @@
+
+body {
+    background-color: #68CEFF;
+    margin: auto;
+    font-family: 'Alata', sans-serif;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: teal;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    z-index: 9999999;
+}
+
+#MainLayout {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 10%;
+    padding-bottom: 50px;
+}
+
+.LayoutParent {
+    background-color: rgba(100, 250, 200, 80%);
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin: 20px 0;
+}
+
+.LayoutParent * {
+    margin: 0;
+}
+
+.LayoutParent > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 50%);
+    border-radius: 50px;
+    border: 2px solid lightcyan;
+}
+
+.LayoutParent h2, .LayoutParent p {
+    text-align: center;
+}
+
+.LayoutParent h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.LayoutParent p {
+    color: white;
+    margin: 2px;
+}
+
+
+/* Start Styling */
+    .LayoutParent > div > div > div {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        margin: 20px;
+        border: 2px solid aliceblue;
+        text-align: center;
+        line-height: 100px;
+        font-size: 12px;
+        color: white;
+    }
+
+    .LayoutParent > div {
+        height: 300px;
+    }
+
+    /* Section Layer */
+        .LayoutParent:nth-child(1) > div > div > div {
+            background-color: salmon;
+        }
+
+        @keyframes animation-11 {
+            from {
+                transform: none;
+                background-color: salmon;
+            } to {
+                transform: translateX(-200px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(1) > div > div:nth-child(1):hover > div {
+            animation: animation-11 1s;
+        }
+
+        @keyframes animation-12 {
+            0% {
+                transform: inherit;
+                background-color: inherit;
+            } 100% {
+                transform: translateY(-100px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(1) > div > div:nth-child(2):hover > div {
+            animation: animation-12 1s;
+        }
+
+        @keyframes animation-13 {
+            0% {
+                /* inherit berarti mengikuti parentnya */
+                transform: inherit;
+                background-color: inherit;
+            } 50% {
+                transform: translateY(-100px) rotate(360deg);
+                background-color: black;
+            } 100% {
+                /* inherit berarti mengikuti parentnya */
+                transform: inherit;
+                background-color: inherit;
+            }
+        }
+
+        .LayoutParent:nth-child(1) > div > div:nth-child(3):hover > div {
+            animation: animation-13 1s;
+        }
+
+        @keyframes animation-14 {
+            0% {
+                /* Kosongkan yang berarti attributnya sama seperti keadaan awal sebelum transisi*/
+            } 25% {
+                transform: translateX(200px) 
+                           rotate(360deg);
+                           background-color: red;
+            } 50% {
+                transform: translateX(200px) 
+                           rotate(360deg) 
+                           translateY(-100px)
+                           rotate(360deg);
+                           background-color: orange;
+            } 75% {
+                transform: translateX(200px) 
+                           rotate(360deg) 
+                           translateY(-100px)
+                           rotate(360deg)
+                           translateY(200px)
+                           rotate(360deg);
+                           background-color: royalblue;
+            } 100% {
+                /* Kosongkan yang berarti attributnya sama seperti keadaan awal sebelum transisi*/
+            }
+        }
+
+        .LayoutParent:nth-child(1) > div > div:nth-child(4):hover > div {
+            animation: animation-14 5s;
+        }
+    /* End Section Layer */
+
+    /* Section Layer */
+        .LayoutParent:nth-child(2) > div > div > div {
+            background-color: greenyellow;
+        }
+
+        @keyframes animation-21 {
+            from {
+                transform: none;
+                background-color: salmon;
+            } to {
+                transform: translateX(-200px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(2) > div > div:nth-child(1):hover > div {
+            animation: animation-21 1s ease-in;
+        }
+
+        @keyframes animation-22 {
+            0% {
+                transform: inherit;
+                background-color: inherit;
+            } 100% {
+                transform: translateY(-100px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(2) > div > div:nth-child(2):hover > div {
+            animation: animation-22 1s 1s;
+        }
+
+        @keyframes animation-23 {
+            0% {
+
+            } 50% {
+                transform: translateX(200px) rotate(360deg);
+                background-color: black;
+            } 100% {
+
+            }
+        }
+
+        .LayoutParent:nth-child(2) > div > div:nth-child(3):hover > div {
+            animation: animation-23 1s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s;
+        }
+    /*End Section Layer */
+
+    /* Section Layer */
+        .LayoutParent:nth-child(3) > div > div > div {
+            background-color: greenyellow;
+        }
+
+        @keyframes animation-31 {
+            from {
+                transform: none;
+                background-color: salmon;
+            } to {
+                transform: translateX(-200px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(3) > div > div:nth-child(1):hover > div {
+            animation: animation-31 1s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 1;
+        }
+
+        @keyframes animation-32 {
+            0% {
+
+            } 100% {
+                transform: translateY(-100px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(3) > div > div:nth-child(2):hover > div {
+            animation: animation-32 2s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 2;
+        }
+
+        @keyframes animation-33 {
+            0% {
+                /* Kosongkan yang berarti attributnya sama seperti keadaan awal sebelum transisi*/
+            } 33% {
+                transform: translateX(200px) 
+                           rotate(360deg);
+                           background-color: red;
+            } 66% {
+                transform: translateX(200px) 
+                           rotate(360deg) 
+                           translateY(-100px)
+                           rotate(360deg);
+                           background-color: orange;
+            } 100% {
+                transform: translateX(200px) 
+                           rotate(360deg) 
+                           translateY(-100px)
+                           rotate(360deg)
+                           translateY(200px)
+                           rotate(360deg);
+                           background-color: royalblue;
+            } 
+        }
+
+        .LayoutParent:nth-child(3) > div > div:nth-child(3):hover > div {
+            animation: animation-33 3s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 3;
+        }
+    /*End Section Layer */
+
+   /* Section Layer */
+        .LayoutParent:nth-child(3) > div > div > div {
+            background-color: greenyellow;
+        }
+
+        @keyframes animation-31 {
+            from {
+                transform: none;
+                background-color: salmon;
+            } to {
+                transform: translateX(-200px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(3) > div > div:nth-child(1):hover > div {
+            animation: animation-31 1s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 1;
+        }
+
+        @keyframes animation-32 {
+            0% {
+
+            } 100% {
+                transform: translateY(-100px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(3) > div > div:nth-child(2):hover > div {
+            animation: animation-32 2s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 2;
+        }
+
+        @keyframes animation-33 {
+            0% {
+
+            } 100% {
+                transform: translateY(100px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(3) > div > div:nth-child(3):hover > div {
+            animation: animation-33 2s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 3;
+        }
+
+        @keyframes animation-34 {
+            0% {
+                /* Kosongkan yang berarti attributnya sama seperti keadaan awal sebelum transisi*/
+            } 33% {
+                transform: translateX(200px) 
+                           rotate(360deg);
+                           background-color: red;
+            } 66% {
+                transform: translateX(200px) 
+                           rotate(360deg) 
+                           translateY(-100px)
+                           rotate(360deg);
+                           background-color: orange;
+            } 100% {
+                transform: translateX(200px) 
+                           rotate(360deg) 
+                           translateY(-100px)
+                           rotate(360deg)
+                           translateY(200px)
+                           rotate(360deg);
+                           background-color: royalblue;
+            } 
+        }
+
+        .LayoutParent:nth-child(3) > div > div:nth-child(4):hover > div {
+            animation: animation-34 3s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s infinite;
+        }
+    /*End Section Layer */
+
+   /* Section Layer */
+    .LayoutParent:nth-child(4) > div > div > div {
+            background-color: lightseagreen;
+        }
+
+        @keyframes animation-41 {
+            from {
+                transform: none;
+                background-color: salmon;
+            } to {
+                transform: translateX(-200px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(4) > div > div:nth-child(1):hover > div {
+            animation: animation-41 1s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 3 normal;
+        }
+
+        @keyframes animation-42 {
+            0% {
+
+            } 100% {
+                transform: translateY(-100px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(4) > div > div:nth-child(2):hover > div {
+            animation: animation-42 2s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 4 reverse;
+        }
+
+        @keyframes animation-43 {
+            0% {
+
+            } 100% {
+                transform: translateY(100px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(4) > div > div:nth-child(3):hover > div {
+            animation: animation-43 2s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 3 alternate;
+        }
+
+        @keyframes animation-44 {
+            0% {
+                /* Kosongkan yang berarti attributnya sama seperti keadaan awal sebelum transisi*/
+            } 33% {
+                transform: translateX(200px) 
+                           rotate(360deg);
+                           background-color: red;
+            } 66% {
+                transform: translateX(200px) 
+                           rotate(360deg) 
+                           translateY(-100px)
+                           rotate(360deg);
+                           background-color: orange;
+            } 100% {
+                transform: translateX(200px) 
+                           rotate(360deg) 
+                           translateY(-100px)
+                           rotate(360deg)
+                           translateY(200px)
+                           rotate(360deg);
+                           background-color: royalblue;
+            } 
+        }
+
+        .LayoutParent:nth-child(4) > div > div:nth-child(4):hover > div {
+            animation: animation-44 3s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 4 alternate-reverse;
+        }
+    /*End Section Layer */
+
+    /* Section Layer */
+    .LayoutParent:nth-child(5) > div > div > div {
+        background-color: khaki;
+        }
+
+        @keyframes animation-51 {
+            from {
+                transform: none;
+                background-color: salmon;
+            } to {
+                transform: translateX(-200px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(5) > div > div:nth-child(1):hover > div {
+            animation: animation-51 1s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 3 alternate none;
+        }
+
+        @keyframes animation-52 {
+            0% {
+
+            } 100% {
+                transform: translateY(-100px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(5) > div > div:nth-child(2):hover > div {
+            animation: animation-52 2s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 3 alternate forwards;
+        }
+
+        @keyframes animation-53 {
+            0% {
+
+            } 100% {
+                transform: translateY(100px) rotate(360deg);
+                background-color: black;
+            }
+        }
+
+        .LayoutParent:nth-child(5) > div > div:nth-child(3):hover > div {
+            animation: animation-53 2s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 3 alternate backwards;
+        }
+
+        @keyframes animation-54 {
+            0% {
+                /* Kosongkan yang berarti attributnya sama seperti keadaan awal sebelum transisi*/
+            } 33% {
+                transform: translateX(200px) 
+                           rotate(360deg);
+                           background-color: red;
+            } 66% {
+                transform: translateX(200px) 
+                           rotate(360deg) 
+                           translateY(-100px)
+                           rotate(360deg);
+                           background-color: orange;
+            } 100% {
+                transform: translateX(200px) 
+                           rotate(360deg) 
+                           translateY(-100px)
+                           rotate(360deg)
+                           translateY(200px)
+                           rotate(360deg);
+                           background-color: royalblue;
+            } 
+        }
+
+        .LayoutParent:nth-child(5) > div > div:nth-child(4):hover > div {
+            animation: animation-54 3s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 3 alternate both;
+        }
+    /*End Section Layer */
+
+    /* Section Layer */
+        .LayoutParent:nth-child(6) > div > div > div {
+            background-color: indianred;
+        }    
+
+        @keyframes animation-61 {
+            0% {
+                /* Kosongkan yang berarti attributnya sama seperti keadaan awal sebelum transisi*/
+            } 33% {
+                transform: translateX(-200px) 
+                           rotate(360deg);
+                           background-color: red;
+            } 66% {
+                transform: translateX(-200px) 
+                           rotate(360deg) 
+                           translateY(-100px)
+                           rotate(360deg);
+                           background-color: orange;
+            } 100% {
+                transform: translateX(-200px) 
+                           rotate(360deg) 
+                           translateY(-100px)
+                           rotate(360deg)
+                           translateY(200px)
+                           rotate(360deg);
+                           background-color: royalblue;
+            } 
+        }
+
+        .LayoutParent:nth-child(6) > div > div:nth-child(1):hover > div {
+            animation: animation-61 3s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 3 alternate both running;
+        }
+
+        @keyframes animation-62 {
+            0% {
+                /* Kosongkan yang berarti attributnya sama seperti keadaan awal sebelum transisi*/
+            } 33% {
+                transform: translateX(200px) 
+                           rotate(360deg);
+                           background-color: red;
+            } 66% {
+                transform: translateX(200px) 
+                           rotate(360deg) 
+                           translateY(-100px)
+                           rotate(360deg);
+                           background-color: orange;
+            } 100% {
+                transform: translateX(200px) 
+                           rotate(360deg) 
+                           translateY(-100px)
+                           rotate(360deg)
+                           translateY(200px)
+                           rotate(360deg);
+                           background-color: royalblue;
+            } 
+        }
+
+        .LayoutParent:nth-child(6) > div > div:nth-child(2):hover > div {
+            animation: animation-62 3s cubic-bezier(0.62,-1.04, 0.33, 1.93) 1s 2 alternate both paused;
+        }
+    /*End Section Layer */

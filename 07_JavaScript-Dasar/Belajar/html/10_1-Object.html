@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./../css/10_1-Object.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Object</title>
+    </head>
+    
+    <body>
+        <header> OBJECT </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <div>
+                    <h3> Basic Object </h3>
+                    <p> (Objek adalah sebuah variable yang memiliki atribut, dan setiap atributnya berisi sebuah nilai) </p>
+                    <p> (bahkan kita dapat membuat objek yang didalamnya berisi sebuah objek juga) </p>
+                    <div class="LayoutContentInline">
+                        <div class="SectionInlineContent">
+
+                            <button onclick="event_layer11()"> SHOW OBJECT </button>
+                        </div>                    
+                        <div class="SectionInlineContent">
+                            
+                            <button onclick='event_layer12("1803015106","Rangga Wiraguna","Teknik Informatika","2018")'> SHOW OBJECT </button>
+                        </div>                    
+                        <div class="SectionInlineContent">
+                            
+                            <button onclick="event_layer13()"> SHOW OBJECT </button>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <div>
+                    <h3> Object Literal </h3>
+                    <p> (Object yang dideklarasikan secara langsung dan disimpan pada satu variable) </p>
+                    <p> (Pembuatan object seperti ini sangat tidak eektif, karena jika ingin membuat object lain dengan property yang sama, maka kita harus menuliskan kode program pembuatan object nya berulang kali) </p>
+                    <div class="LayoutContentInline">
+                        <div class="SectionInlineContent">
+    
+                        </div>                    
+                        <div class="SectionInlineContent">
+    
+                        </div>                    
+                        <div class="SectionInlineContent">
+    
+                        </div>                    
+                    </div>
+                    <br>
+                    <center><button onclick="event_layer2()"> SHOW OBJECT </button></center>
+                </div>
+            </div>
+            
+            <div class="LayoutParent">
+                <div>
+                    <h3> Function Declaration </h3>
+                    <p> (Sama seperti pembuatan object literal, hanya saja proses pembuatan objek dimasukkan kedalam function yang mengembalikan nilai objek baru) </p>
+                    <p> (objek baru yang dikembalikan akan tersimpan pada suatu variable, sehingga kita tidak perlu menulis ulang kode proses pembatan object jika ingin membuat objek baru) </p>
+                    <div class="LayoutContentInline">
+                        <div class="SectionInlineContent">
+    
+                        </div>                    
+                        <div class="SectionInlineContent">
+    
+                        </div>                    
+                        <div class="SectionInlineContent">
+    
+                        </div>                    
+                    </div>       
+                    <br>
+                    <center><button onclick="event_layer3()"> SHOW OBJECT </button></center>
+                </div>
+            </div>
+            
+            <div class="LayoutParent">
+                <div>
+                    <h3> Constructor Function </h3>
+                    <p> (Cara ini adalah cara yang paling efektif, karena function akan membuat attribut pada variable this) </p>
+                    <p> (this disini dimaksudkan pada variable yang memanggil funtion menggunakan keyword new) </p>
+                    <p> (this juga terdapat pada variable global, yaitu window itu sendiri) </p>
+                    <div class="LayoutContentInline">
+                        <div class="SectionInlineContent">
+
+                        </div>                    
+                        <div class="SectionInlineContent">
+    
+                        </div>                    
+                        <div class="SectionInlineContent">
+    
+                        </div>                    
+                    </div>       
+                    <br>
+                    <center><button onclick="event_layer4()"> SHOW OBJECT </button></center>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/10_1-Object.js"></script>
+</html>

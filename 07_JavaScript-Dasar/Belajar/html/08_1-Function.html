@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./../css/08_1-Function.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Function</title>
+    </head>
+    
+    <body>
+        <header> FUNCTION </header>
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <center>
+                    <h3> FUNCTION </h3>
+                    <div class="LayoutContentInline">
+                        <div id="layer11" class="SectionInlineContent">
+                            <center>
+                                <img src="./../src/Images/IC_User-Add.png" alt="" width="100px"> <br>
+                                <a href="#ProcessFunction"> <button onclick="createData(this.innerHTML)">CREATE<br>DATA</button> </a>                    
+                            </center>
+                        </div>
+                        <div id="layer12" class="SectionInlineContent">
+                            <center>
+                                <img src="./../src/Images/IC_User-Read.png" alt="" width="100px"> <br>
+                                <a href="#ProcessFunction"> <button onclick="readData(this.innerHTML)">READ<br>DATA</button> </a>                      
+                            </center>
+                        </div>
+                        <div id="layer13" class="SectionInlineContent">
+                            <center>
+                                <img src="./../src/Images/IC_User-Update.png" alt="" width="100px"> <br>
+                                <a href="#ProcessFunction"> <button onclick="updateData(this.innerHTML)">UPDATE<br>DATA</button> </a>                 
+                            </center>
+                        </div>
+                        <div id="layer14" class="SectionInlineContent">
+                            <center>
+                                <img src="./../src/Images/IC_User-Remove.png" alt="" width="100px"> <br>
+                                <a href="#ProcessFunction"> <button onclick="deleteData(this.innerHTML, undefined)">DELETE<br>DATA</button> </a>                   
+                            </center>
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div id="ProcessFunction" class="LayoutParent">
+                <center>
+                    <h3> PROCESS IN FUNCTION </h3>
+                    <div class="SectionBlockContent">
+                        <div id="process_layer" class="HideContent">
+
+                        </div>
+
+                        <div id="UnavailableContent" class="HideContent">
+                            <img src="./../src/Images/IC_Default-Page.png" alt="" width="200px">
+                            <p style="margin: 0px;"> Sorry, Unavailable content for this layer...</p>
+                        </div>                        
+
+                        <div id="ProgressLoading" class="HideContent">
+                            <img src="./../src/Images/IC_Loading.gif" alt="" width="50px" height="50px">
+                            <p style="margin: 0px;"> Loading...</p>
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div id="FlowPage">
+                <div>
+                    <img src="./../src/Images/IC_NextPage.png" onclick="location.href='./08_2-Parameter&Argument.html';" width="80px" height="80px">
+                    <p> NEXT </p>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/08_1-Function.js"></script>
+</html>
+
+
+
+
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/01 - DOM-Selection.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Selection</title>
+    </head>
+    
+    <body>
+        <header> DOM SELECTION </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h3> getElementById() </h3>
+                <p> (Method ini dapat mengambil satu elemen dengan id yang sesuai dengan argument pemanggilan method) </p>
+                <p> (Method ini akan mengembalikan hanya satu elemen, artinya jika terdapat elemen lain dengan id yang sama maka akan diabaikan, dan hanya mengambil elemen pertama) </p>
+                <p> ( return element )</p>
+                <div>
+                    <div id="layer1_container" class="layer_container theme1">
+                        <div>
+                            <p>Nama</p>
+                            <p>NIM</p>
+                            <p>Jurusan</p>
+                            <p>Angkatan</p>
+                        </div>
+                        <div>
+                            <p>:</p>
+                            <p>:</p>
+                            <p>:</p>
+                            <p>:</p>
+                        </div>
+                        <div>
+                            <p id="fieldNama"> Rangga Wiraguna </p>
+                            <p id="fieldNim"> 1803015106 </p>
+                            <p id="fieldJurusan"> Teknik Informatika </p>
+                            <p id="fieldAngkatan"> 2018 </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button onclick="event_layer1(this.innerHTML)">Change Theme</button>
+                    <button onclick="event_layer1(this.innerHTML)">Change Name</button>
+                    <button onclick="event_layer1(this.innerHTML)">Change Nim</button>
+                    <button onclick="event_layer1(this.innerHTML)">Change Jurusan</button>
+                    <button onclick="event_layer1(this.innerHTML)">Change Angkatan</button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> getElementsByTagName() </h3>
+                <p> (Method ini dapat mengambil elemen yang sesuai dengan tag yang dimasukkan didalam argument pemanggilan function) </p>
+                <p> (Method ini akan mengembalikan seluruh elemen yang terpilih, dan dimasukkan kedalam HTMLCollection) </p>
+                <p> ( return HTMLCollection )</p>
+                <div>
+                    <div id="layer2_container" class="layer_container theme1">
+                        <div>
+                            <p>Nama</p>
+                            <p>NIM</p>
+                            <p>Jurusan</p>
+                            <p>Angkatan</p>
+                        </div>
+                        <div>
+                            <p>:</p>
+                            <p>:</p>
+                            <p>:</p>
+                            <p>:</p>
+                        </div>
+                        <div>
+                            <p> Rangga Wiraguna </p>
+                            <p> 1803015106 </p>
+                            <p> Teknik Informatika </p>
+                            <p> 2018 </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <input placeholder="Masukkan Tag" onfocus="this.placeholder=''">
+                    <button onclick="event_layer2(document.querySelector('.LayoutParent:nth-child(2) > div:last-of-type > input').value)">Search Tag</button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> getElementsByClassName() </h3>
+                <p> (Method ini dapat mengambil elemen yang sesuai dengan class yang dimasukkan didalam argument pemanggilan function) </p>
+                <p> (Method ini akan mengembalikan seluruh elemen yang terpilih, dan dimasukkan kedalam HTMLCollection) </p>
+                <p> ( return HTMLCollection )</p>
+                <div>
+                    <div id="layer3_container" class="layer_container theme1">
+                        <div>
+                            <p class="IndexBio">Nama</p>
+                            <p class="IndexBio">NIM</p>
+                            <p class="IndexBio">Jurusan</p>
+                            <p class="IndexBio">Angkatan</p>
+                        </div>
+                        <div>
+                            <p>:</p>
+                            <p>:</p>
+                            <p>:</p>
+                            <p>:</p>
+                        </div>
+                        <div>
+                            <p> Rangga Wiraguna </p>
+                            <p> 1803015106 </p>
+                            <p> Teknik Informatika </p>
+                            <p> 2018 </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button onclick="event_layer3()">Search & Focus Class <br> (IndexBio) </button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> querySelector() </h3>
+                <p> (Method ini dapat mengambil elemen yang sesuai dengan deklarasi selector atau penelusuran selector syntax css yang dimasukkan didalam argument pemanggilan function) </p>
+                <p> (Method ini akan mengembalikan hanya satu elemen, artinya jika terdapat elemen lain dengan id yang sama maka akan diabaikan, dan hanya mengambil elemen pertama) </p>
+                <p> ( return element )</p>
+                <div>
+                    <div id="layer4_container" class="layer_container theme1">
+                        <div>
+                            <p>Nama</p>
+                            <p>NIM</p>
+                            <p>Jurusan</p>
+                            <p>Angkatan</p>
+                        </div>
+                        <div>
+                            <p>:</p>
+                            <p>:</p>
+                            <p>:</p>
+                            <p>:</p>
+                        </div>
+                        <div>
+                            <p> Rangga Wiraguna </p>
+                            <p> 1803015106 </p>
+                            <p> Teknik Informatika </p>
+                            <p> 2018 </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button onclick="event_layer4()">Search & Focus Query <br> (RowBio) </button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> querySelectorAll() </h3>
+                <p> (Method ini dapat mengambil elemen yang sesuai dengan deklarasi selector atau penelusuran selector syntax css yang dimasukkan didalam argument pemanggilan function) </p>
+                <p> (Method ini akan mengembalikan seluruh elemen yang terpilih, dan dimasukkan kedalam HTMLCollection) </p>
+                <p> ( return HTMLCollection )</p>
+                <div>
+                    <div id="layer5_container" class="layer_container theme1">
+                        <div>
+                            <p>Nama</p>
+                            <p>NIM</p>
+                            <p>Jurusan</p>
+                            <p>Angkatan</p>
+                        </div>
+                        <div>
+                            <p>:</p>
+                            <p>:</p>
+                            <p>:</p>
+                            <p>:</p>
+                        </div>
+                        <div>
+                            <p> Rangga Wiraguna </p>
+                            <p> 1803015106 </p>
+                            <p> Teknik Informatika </p>
+                            <p> 2018 </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button onclick="event_layer5()">Search & Focus All Query <br> (RowBio) </button>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/01 - DOM-Selection.js"></script>
+</html>

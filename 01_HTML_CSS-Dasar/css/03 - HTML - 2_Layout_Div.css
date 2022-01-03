@@ -1,0 +1,63 @@
+
+body {
+    background-color: aliceblue;
+    font-family: 'Product Sans';
+}
+
+header {
+    font-size: 48px;
+    color: aqua;
+    background-color: teal;
+    text-align: center;
+    padding: 20px;
+}
+
+#sideBar {
+    float: left;
+    width: 20%;
+    height: 600px;
+    background: lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#mainContent {
+    float: right;
+    width: 80%;
+    text-align: center;
+    height: 600px;
+    background: khaki;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer {
+    text-align: center;
+    height: 40px;
+    background: bisque;
+    clear: both;
+    padding: 10px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleDivision {
+    margin: 0px;
+    margin-left: 10px;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.itemNavigation_Display {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.itemNavigation_Item {
+    font-size: 20px;
+    display: inline;
+    margin-right: 10px;
+    vertical-align: middle;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/03 - DOM-Events.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Events</title>
+    </head>
+    
+    <body>
+        <header> DOM EVENTS </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h3> Inline HTML Attribute </h3>
+                <p> (Teknik ini memberikan penangan event pada suatu elemen) </p>
+                <p> (Cara ini paling mudah, tetapi tidak efektif karena membuat event didalam tag html itu sendiri) </p>
+                <div class="ContainerLayer">
+                    <button onclick="alert('Hallo anak sialan 1')"> Click me! </button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> Element Method </h3>
+                <p> (Sama seperti sebelumnya, hanya saja pendeklarasian event dilakukan pada file javascript) </p>
+                <div class="ContainerLayer">
+                    <button> Click me! </button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> Event Listener </h3>
+                <p> (Teknik ini menggunakan method addEventListener untuk penanganan suatu event) </p>
+                <p> (Ada banyak event yang dapat kita tangani hanya dengan satu method sesuai argument / tipe event yang sesuai) </p>
+                <p> (Teknik ini juga dapat memberikan lebih dari satu kejadian pada satu event di element, ini yang menjadi perbedaan dengan yang lainnya) </p>
+                <p> (Cara ini adalah cara yang paling efektif dan biasa digunakan oleh kebanyakan orang) </p>
+                <div class="ContainerLayer">
+                    <button> Click me! </button>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/03 - DOM-Events.js"></script>
+</html>

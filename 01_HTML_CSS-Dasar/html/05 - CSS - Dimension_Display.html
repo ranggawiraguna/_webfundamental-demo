@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<!-- 
+    inline = ukuran layout bergantung pada ukuran content yang ada didalamnya(isi childnya),
+             elemen width dan height tidak akan berpengaruh pada inline, 
+             begitupula pada margin vertical tidak akan berengaruh, hanya bisa di set pada margin horizontalnya 
+    block  = ukuran width layout bergantung pada ukuran parentnya(width = 100% parent), 
+             tetapi height dapat di set sesuai kebutuhan, jika height tidak di set aka height akan mengikuti ukuran content nya dan
+             ditambahkan dengan margin/padding default pada masing masing tag 
+
+    <span> == display: inline 
+    <div>  == display: block        
+-->
+
+<html lang="en">
+    <!--CSS Styling Import-->
+    <link rel="stylesheet" href="./../css/05 - CSS - Dimension_Display.css">
+
+    <!--HTML Head Title Website-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display & Dimension</title>
+    </head>
+
+    <!--HTML Body Content Website-->
+    <body>
+        <!--Header-->
+        <header> DISPLAY & DIMENSION </header>
+
+        <center style="background-color: khaki; margin-left: -10px; margin-right: -10px;">
+            <div class="TabBar">
+                <div id="TabBar-Navigation" style="background-color: whitesmoke;">
+                    <center>
+                        <a id="TabBar-Navigation-info" href="04_DImension_Display.html"> 
+                            <span id="TabBar-Navigation-info"> <img src="https://image.flaticon.com/icons/png/512/69/69524.png" alt="" width="30px" height="30px"> </span>
+                            <span id="TabBar-Navigation-info">  Home </span>
+                        </a>
+                    </center>
+                </div>
+                <div id="TabBar-Navigation">
+                    <center>
+                        <a id="TabBar-Navigation-info" href="./00_Dasar.html"> 
+                            <span id="TabBar-Navigation-info"> <img src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png" alt="" width="30px" height="30px"> </span>
+                            <span id="TabBar-Navigation-info"> Account </span>
+                        </a>
+                    </center>
+                </div>
+                <div id="TabBar-Navigation">
+                    <center>
+                        <a id="TabBar-Navigation-info" href=""> 
+                            <span id="TabBar-Navigation-info"> <img src="https://cdn.icon-icons.com/icons2/2066/PNG/512/search_icon_125165.png" alt="" width="30px" height="30px"> </span>
+                            <span id="TabBar-Navigation-info"> Search </span>
+                        </a>
+                    </center>
+                </div>
+                <div id="TabBar-Navigation">
+                    <center>
+                        <a id="TabBar-Navigation-info" href=""> 
+                            <span id="TabBar-Navigation-info"> <img src="https://image.flaticon.com/icons/svg/81/81020.svg" alt="" width="30px" height="30px"> </span>
+                            <span id="TabBar-Navigation-info"> Setting </span>
+                        </a>
+                    </center>
+                </div>
+                <div id="TabBar-Navigation">
+                    <center>
+                        <a id="TabBar-Navigation-info" href=""> 
+                            <span id="TabBar-Navigation-info"> <img src="https://www.freeiconspng.com/uploads/info-icon-7.png" alt="" width="30px" height="30px"> </span>
+                            <span id="TabBar-Navigation-info"> About </span>
+                        </a>
+                    </center>
+                </div>
+                <div id="TabBar-Navigation">
+                    <center>
+                        <a id="TabBar-Navigation-info" href="C:\Users\Rangga\_cxz\Programming\WebProjects\BELAJAR\Latihan\html\00_Dasar.html"> 
+                            <span id="TabBar-Navigation-info"> <img src="https://titikdigital.com/wp-content/uploads/2019/03/aami4-02-512.png" alt="" width="30px" height="30px"> </span>
+                            <span id="TabBar-Navigation-info"> Feedback </span>
+                        </a>
+                    </center>
+                </div>
+            </div>
+        </center>
+
+        <div class="MainContentDiv">
+            <strong id="MainContentDiv-title"> BELAJAR WEB PROGRAMMING </strong>
+            <br><br>
+
+            <p style="text-align: left; padding: 10px; margin: 10px;"> 
+                &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, officiis minima mollitia similique temporibus, maxime numquam magni, suscipit quisquam impedit in cum modi corporis doloribus dolorem. Corrupti tempore cum molestias.
+                <br/>
+                &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, officiis minima mollitia similique temporibus, maxime numquam magni, suscipit quisquam impedit in cum modi corporis doloribus dolorem. Corrupti tempore cum molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, officiis minima mollitia similique temporibus, maxime numquam magni, suscipit quisquam impedit in cum modi corporis doloribus dolorem. Corrupti tempore cum molestias.
+            </p>
+
+            <div class="MainContentDiv-content">
+                <h3 id="MainContentDiv-content-title"> Jalur Belajar </h3>
+
+                <span>
+                    <div id="MainContentDiv-content-layout">
+                        <div id="MainContentDiv-content-item">
+                            <img id="MainContentDiv-content-item-avatar" src="https://cdn-cdpl.sgp1.digitaloceanspaces.com/original/2/frontend_lanjut.jpg" alt="Code Politan" width="200px" height="200px">
+                            <h3 id="MainContentDiv-content-item-info"> Front End Developer </h3>
+                        </div>
+                        <br>  
+                        <button id="MainContentDiv-content-button"> Pilih </button>
+                    </div>
+                </span>
+                <span>
+                    <div id="MainContentDiv-content-layout">
+                        <div id="MainContentDiv-content-item">
+                            <img id="MainContentDiv-content-item-avatar" src="https://cdn-cdpl.sgp1.digitaloceanspaces.com/original/2/fullstack-dev-path.jpg" alt="Code Politan" width="200px" height="200px">
+                            <h3 id="MainContentDiv-content-item-info"> Full Stack Developer </h3>
+                        </div>
+                        <br>  
+                        <button id="MainContentDiv-content-button"> Pilih </button>
+                    </div>
+                </span>
+                <span>
+                    <div id="MainContentDiv-content-layout">
+                        <div id="MainContentDiv-content-item">
+                            <img id="MainContentDiv-content-item-avatar" src="https://cdn-cdpl.sgp1.digitaloceanspaces.com/original/2/backend_lanjut.jpg" alt="Code Politan" width="200px" height="200px">
+                            <h3 id="MainContentDiv-content-item-info" > Back End Developer </h3>
+                        </div>
+                        <br>  
+                        <button id="MainContentDiv-content-button"> Pilih </button>
+                    </div>
+                </span>
+            </div> 
+            
+            <p style="margin: 0px; margin-top: 15px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+
+        <center style="background-color: khaki; margin-left: -10px; margin-right: -10px; margin-bottom: -10px;"> 
+            <div class="FooterDiv"> www.bacotan.com </div> 
+        </center>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+body {
+    background-image: url(./../src/Images/Patterns_Swirl.png);
+    background-repeat: repeat;
+ }
+
+body > div {
+    position: relative;
+    font-family: 'Alata', sans-serif;
+    width: 1024px;
+    margin: 170px auto 100px;
+    background-color: white;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 50%);
+}
+
+.top-bar {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: 'Product Sans', Arial;
+    background-color: rgb(255, 237, 214);
+    border-bottom: 5px solid lightskyblue;
+}
+
+#InstagramRibbon {
+    display: inline-block;
+    position: absolute;
+    top: -21px;
+    right: -23.8px;
+    width: 200px;
+    height: 200px;
+    background-image: url(./../src/Images/Instagram_Ribbon.png);
+    background-size: cover;
+}
+
+.header {
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 236);
+}
+
+.header h1 {
+    color: black;
+    font-family: 'Just Another Hand', cursive;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    margin-bottom: 40px;
+    font-size: 72px;
+    font-weight: bold;
+    text-shadow: -2px 2px 10px rgba(100, 100, 100, 0.5);
+}
+
+.header ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.header ul li a{
+    color: lightseagreen;
+    text-decoration: none;
+}
+
+.header ul li a:hover{
+    color: royalblue;
+    text-decoration: underline;
+}
+
+.hero-image {
+    border-top: 5px solid lightseagreen;
+    border-bottom: 5px solid lightskyblue;
+    background-image: url(./../src/Images/HeroCover.jpg);
+    background-size: cover;
+    background-position: 0 -220px;
+    width: 100%;
+    height: 400px;
+}
+
+.content {
+    background-color: whitesmoke;
+    text-align: justify;
+}
+
+.content .main {
+    float: left;
+    width: 660px;
+    font-family: 'Product Sans', Arial;
+    padding: 20px;
+    box-sizing: border-box;
+}  
+
+.content .main h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content .main #penulis {
+    text-indent: 0;
+    font-size: 14px;
+}
+
+.content .main p {
+    text-indent: 20px;
+    margin-top: 10px;
+}
+
+.content .profile-info {
+    width: 330px;
+    padding: 20px;
+    float: right;
+    box-sizing: border-box;
+}
+
+.content .profile-info h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.content .profile-info img {
+    float: left;
+    margin-right: 10px;
+}
+
+.content .profile-info p {
+    font-family: 'Product Sans', Arial;
+    text-indent: 20px;
+}
+
+.footer {
+    height: 70px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    text-align: center;
+    line-height: 70px;
+}

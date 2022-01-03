@@ -1,0 +1,79 @@
+
+body {
+    font-family: 'Product Sans';
+}
+
+header {
+    font-size: 48px;
+    color: aqua;
+    background-color: teal;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    margin: -10px -10px 0px -10px;
+}
+
+.MainContent {
+    margin: -10px;
+    padding: 20px;
+    background-color: khaki;
+}
+
+#Content-title {
+    background-color: lightgray;
+    text-align: center;
+    font-size: 32px;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.Content-Box{
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+#Content-Box-content{
+    background-color: whitesmoke;
+    padding: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#Content-Box-content-item{
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 350px;
+    height: 400px;
+    background-color: yellowgreen;
+    padding: 10px 20px 15px 20px;
+    margin: 0px 20px 5px 20px;
+    border-radius: 10px;
+}
+
+#Content-Box-content-item-title{
+    border-bottom: 2px dotted black;
+    padding-bottom: 5px;
+    margin: 0px 0px 5px 0px;
+}
+
+#Content-Box-content-item-info{
+    text-align: justify;
+    margin: 0px;
+}
+
+.FooterDiv {
+    text-align: center;
+    height: 40px;
+    background: bisque;
+    clear: both;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

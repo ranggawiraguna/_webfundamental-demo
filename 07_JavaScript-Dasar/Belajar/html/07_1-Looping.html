@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./../css/07_1-Looping.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Looping</title>
+    </head>
+    
+    <body>
+        <header> LOOPING </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <center>
+                    <h3> FOR-LOOP </h3>
+
+                    <div class="LayoutContentInline">
+                        <div class="SectionInlineContent">
+                            <p> Deret Bilangan </p>
+                            <button id="layer11-button" onclick="event_layer11()">LIHAT</button>                        
+                        </div>
+    
+                        <div class="SectionInlineContent">
+                            <p> Biodata Kamu : </p>
+                            <p id="layer12-jawaban1" class="layer_biodata DataBio"> </p>
+                            <p id="layer12-jawaban2" class="layer_biodata DataBio"> </p>
+                            <p id="layer12-jawaban3" class="layer_biodata DataBio"> </p>
+                            <p id="layer12-jawaban4" class="layer_biodata DataBio"> </p>
+                            <p id="layer12-jawaban5" class="layer_biodata DataBio"> </p>
+                            <button id="layer12-button" onclick="event_layer12(this.innerHTML)">INPUT BIODATA</button>                        
+                        </div>
+
+                        <div class="SectionInlineContent">
+                            <p> Game Tebakan </p>
+                            <button id="layer13-button" onclick="event_layer13()">MAIN</button>                        
+                        </div>
+                    </div>
+                    <br>
+                    <div class="LayoutContentInline">
+                        <div class="SectionInlineContent">
+                            <p> Daftar Mahasiswa : </p>
+                            <p id="layer14-mahasiswa1" class="layer_biodata DataBio"> </p>
+                            <p id="layer14-mahasiswa2" class="layer_biodata DataBio"> </p>
+                            <p id="layer14-mahasiswa3" class="layer_biodata DataBio"> </p>
+                            <button id="layer14-button" onclick="event_layer14(this.innerHTML)">LIHAT DAFTAR MHS</button>                        
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="LayoutParent">
+                <center>
+                    <h3> FOR-EACH </h3>
+
+                    <div class="SectionBlockContent">
+                        <table>
+                            <tr>
+                                <th> NO </th>
+                                <th> Peminatan </th>
+                            </tr>
+                
+                            <tr>
+                                <td> 1 </td>
+                                <td id="layer21_Data1">  </td>
+                            </tr>
+                
+                            <tr>
+                                <td> 2 </td>
+                                <td id="layer21_Data2">  </td>
+                            </tr>
+                            <tr>
+                                <td> 3 </td>
+                                <td id="layer21_Data3">  </td>
+                            </tr>                    
+                        </table>
+
+                        <button id="layer21-button" onclick="event_layer21(this.innerHTML)">LIHAT DATA</button>                                                
+                    </div>
+                    <br><br>
+                    <div class="SectionBlockContent">
+                        <table>
+                            <tr>
+                                <th> NO </th>
+                                <th> NIM </th>
+                                <th> Nama </th>
+                                <th> Jurusan </th>
+                                <th> Nilai Ujian </th>
+                                <th> Keterangan </th>
+                            </tr>
+                
+                            <tr>
+                                <td> 1 </td>
+                                <td id="layer22_Data11">  </td>
+                                <td id="layer22_Data12">  </td>
+                                <td id="layer22_Data13" class="CenterData">  </td>
+                                <td id="layer22_Data14" class="CenterData">  </td>
+                                <td id="layer22_Data15" class="CenterData">  </td>
+                            </tr>
+                
+                            <tr>
+                                <td> 2 </td>
+                                <td id="layer22_Data21">  </td>
+                                <td id="layer22_Data22">  </td>
+                                <td id="layer22_Data23" class="CenterData">  </td>
+                                <td id="layer22_Data24" class="CenterData">  </td>
+                                <td id="layer22_Data25" class="CenterData">  </td>
+                            </tr>
+                            <tr>
+                                <td> 3 </td>
+                                <td id="layer22_Data31">  </td>
+                                <td id="layer22_Data32">  </td>
+                                <td id="layer22_Data33" class="CenterData">  </td>
+                                <td id="layer22_Data34" class="CenterData">  </td>
+                                <td id="layer22_Data35" class="CenterData">  </td>
+                            </tr>                    
+                        </table>
+
+                        <button id="layer22-button" onclick="event_layer22(this.innerHTML)">LIHAT DATA</button>                                                
+                    </div>
+                </center>
+            </div>
+
+            <div class="LayoutParent">
+                <center>
+                    <h3> WHILE-LOOP </h3>
+                    <div class="LayoutContentInline">
+                        <div class="SectionInlineContent">
+                            <p> Deret Bilangan </p>
+                            <button id="layer31-button" onclick="event_layer31()">LIHAT</button>                        
+                        </div>
+    
+                        <div class="SectionInlineContent">
+                            <p> Biodata Kamu : </p>
+                            <p id="layer32-jawaban1" class="layer_biodata DataBio"> </p>
+                            <p id="layer32-jawaban2" class="layer_biodata DataBio"> </p>
+                            <p id="layer32-jawaban3" class="layer_biodata DataBio"> </p>
+                            <p id="layer32-jawaban4" class="layer_biodata DataBio"> </p>
+                            <p id="layer32-jawaban5" class="layer_biodata DataBio"> </p>
+                            <button id="layer32-button" onclick="event_layer32(this.innerHTML)">INPUT BIODATA</button>
+                        </div>
+
+                        <div class="SectionInlineContent">
+                            <p> Game Tebakan </p>
+                            <button id="layer33-button" onclick="event_layer33()">MAIN</button>                        
+                        </div>
+                    </div>
+                    <br>
+                    <div class="LayoutContentInline">
+                        <div class="SectionInlineContent">
+                            <p> Daftar Mahasiswa : </p>
+                            <p id="layer34-mahasiswa1" class="layer_biodata DataBio"> </p>
+                            <p id="layer34-mahasiswa2" class="layer_biodata DataBio"> </p>
+                            <p id="layer34-mahasiswa3" class="layer_biodata DataBio"> </p>
+                            <button id="layer34-button" onclick="event_layer34(this.innerHTML)">LIHAT DAFTAR MHS</button>                        
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div id="FlowPage">
+                <div>
+                    <img src="./../src/Images/IC_NextPage.png" onclick="location.href='./07_2-NestedLooping.html';" width="80px" height="80px">
+                    <p> NEXT </p>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/07_1-Looping.js"></script>
+</html>
+
+
+
+
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--CSS Styling Import-->
+    <link rel="stylesheet" href="./../css/06 - CSS - BoxModel_Overflow.css">
+
+    <!--HTML Head Title Website-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Box Model & Overflow </title>
+    </head>
+
+    <!--HTML Body Content Website-->
+    <body>
+        <!--Header-->
+        <header> Box Model & Overflow </header>
+        <div class="MainContent">
+            <center>
+                <div class="Content-Box">
+                    <h2 id="Content-title"> Box Model </h2>
+
+                    <div id="Content-Box-content">
+                        <!--Border Box-->
+                        <span>
+                            <!--
+                                Ukuran yang sudah dideklarasikan pada div ini akan ditetapkan pada layoutnya, 
+                                tanpa memperdulikan padding yang dibuat.
+                                Overflow pada box ini bersifat visiblie, artinya content akan tetap dimunculkan jika melebihi batas box
+                            -->
+                            <div id="Content-Box-content-item" style="box-sizing: border-box;">
+                                <h3 id="Content-Box-content-item-title"> Quotes </h3>
+                                <p id="Content-Box-content-item-info">
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?                                    
+                                </p>
+                            </div>
+                        </span>
+
+                        <!--Content Box-->
+                        <span>
+                            <!--
+                                Ukuran yang sudah dideklarasikan pada div ini akan ditetapkan pada isi dari contentnya, 
+                                sehingga ukuran pada box yaitu ukuran dari conten(yang sudah dideklarasikan pada style) + ukuran paddingnya.
+                                Overflow pada box ini bersifat hidem, artinya content akan disembunyikan jika melebihi batas box
+                            -->
+                            <div id="Content-Box-content-item" style="box-sizing: content-box;">
+                                <h3 id="Content-Box-content-item-title"> Quotes </h3>
+                                <p id="Content-Box-content-item-info">
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                </p>
+                            </div>
+                        </span>
+
+                        <!--Default Box(Content Box) dengan Overflow-->
+                        <span>
+                            <div id="Content-Box-content-item">
+                                <h3 id="Content-Box-content-item-title"> Quotes </h3>
+                                <p id="Content-Box-content-item-info">
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                </p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </center>
+
+
+            <center>
+                <div class="Content-Box">
+                    <h2 id="Content-title"> Overflow </h2>
+
+                    <div id="Content-Box-content">
+                        <!--Default Box(Content Box) dengan Overflow Auto-->
+                        <span>
+                            <div id="Content-Box-content-item" style="overflow: auto;">
+                                <h3 id="Content-Box-content-item-title"> Quotes </h3>
+                                <p id="Content-Box-content-item-info">
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                </p>
+                            </div>
+                        </span>
+                        <!--Default Box(Content Box) dengan Overflow Auto-->
+                        <span>
+                            <div id="Content-Box-content-item" style="overflow: auto;">
+                                <h3 id="Content-Box-content-item-title"> Quotes </h3>
+                                <p id="Content-Box-content-item-info">
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                </p>
+                            </div>
+                        </span>
+                        <!--Default Box(Content Box) dengan Overflow Scroll-->
+                        <span>
+                            <div id="Content-Box-content-item" style="overflow: scroll;">
+                                <h3 id="Content-Box-content-item-title"> Quotes </h3>
+                                <p id="Content-Box-content-item-info">
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                </p>
+                            </div>
+                        </span>
+
+                        <br><br>
+
+                        <!--Border Box dengan Overflow Visible-->
+                        <span>
+                            <div id="Content-Box-content-item" style="box-sizing: border-box; overflow: visible;">
+                                <h3 id="Content-Box-content-item-title"> Quotes </h3>
+                                <p id="Content-Box-content-item-info">
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                </p>
+                            </div>
+                        <!--Content Box dengan Overflow Hidden-->
+                        <span>
+                            <div id="Content-Box-content-item" style="overflow: hidden;">
+                                <h3 id="Content-Box-content-item-title"> Quotes </h3>
+                                <p id="Content-Box-content-item-info">
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                </p>
+                            </div>
+                        </span>
+                        <!--Default Box(Content Box) dengan Overflow Default-->
+                        <span>
+                            <div id="Content-Box-content-item">
+                                <h3 id="Content-Box-content-item-title"> Quotes </h3>
+                                <p id="Content-Box-content-item-info">
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                    <br>
+                                    &emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum reprehenderit ex provident autem officiis quae, libero minima distinctio, modi quasi nulla dolorum obcaecati odit deleniti architecto dignissimos explicabo dolore?
+                                </p>
+                            </div>
+                        </span>                        
+                    </div>
+                </div>
+            </center>
+        </div>    
+
+
+        <center style="background-color: khaki; margin-left: -10px; margin-right: -10px; margin-bottom: -10px;"> 
+            <div class="FooterDiv"> www.bacotan.com </div> 
+        </center>
+    </body>
+</html>

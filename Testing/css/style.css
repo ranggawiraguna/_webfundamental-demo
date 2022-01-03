@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.Header {
+    width: 100%;
+    height: 80px;
+    background-color: #C4C4C4;
+}
+
+.Header > h1 {
+    font-family: 'Letters For Learners';
+    font-size: 42px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    line-height: 80px;
+}
+
+.Section {
+    display: flex;
+}
+
+.Navigation {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 670px;
+    background-color: #C4C4C4;
+}
+
+.Contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+    padding: 30px;
+    margin: 20px;
+    width: 80%;
+    height: 670px;
+    background-color: #C4C4C4;
+}
+
+.Navigation > button {
+    cursor: pointer;
+    margin: 10px;
+    outline: 0 !important;
+    border: 0;
+    background-color: white;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.Navigation > button:hover {
+    color: white;
+    background-color: lightsteelblue;    
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 240px;
+    height: 250px;
+    margin: 10px;
+}
+
+.Card > img {
+    padding: 20px;
+    height: 60%;
+}
+
+.Card > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(196, 196, 196, 50%);
+}

@@ -1,0 +1,59 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Product Sans';
+    margin: auto;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 48px;
+    color: aqua;
+    background-color: teal;
+    text-align: center;
+    padding: 20px;
+}
+
+#MainContent {
+    padding: 2%;
+}
+
+form input[type="text"], form input[type="password"]{
+    box-sizing: border-box;
+    width: 500px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: 0 !important;
+}
+
+form input[type="text"]:focus, form input[type="password"]:focus {
+    border: 2px solid blue;
+}
+
+.Content-Box{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 10%);
+}
+
+.Content-Box p{
+    margin: 0;
+}
+
+button {
+    color: black;
+    font-size: 18px;
+    background-color: khaki;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: 0 !important;
+    padding: 5px 10px;
+    margin-left: 200px;
+}
+
+

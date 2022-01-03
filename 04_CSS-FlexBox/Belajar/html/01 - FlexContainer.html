@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/__tools.css">
+    <link rel="stylesheet" href="./../css/01 - FlexContainer.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex Container</title>
+    </head>
+    
+    <body>
+        <header> FLEX CONTAINER </header>
+
+        <div id="MainLayout">
+            <p> Flexbox dibuat dengan cara memberikan parent sebuah properti display dengan nilai flex / inline-flex, agar content didalamnya dapat bersifat flex juga </p>
+
+            <div class="LayoutParent">
+                <h2> Container :: Display  </h2>
+                <p> (Layout Flex dapat membuat content didalamnya menjadi item yang sejajar) </p>
+                <p> (akan tetapi layout flex akan menganggap item didalamnya adalah sebuah satu baris atau kolom, sehingga jika ada item yang overflow, maka flex akan mengkalkulasikan ulang ukuran item didalamnya) </p>
+                <div>
+                    <div>
+                        <center>
+                            <p> Flex </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p> Inline-Flex </p>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Container :: Flex Direction </h2>
+                <p> (Properti ini dapat menentukan arah dari urutan item yang ada didalam flexbox) </p>
+                <div>
+                    <p> Row </p>
+                    <div>
+                        <div> 1 </div>
+                        <div> 2 </div>
+                        <div> 3 </div>
+                        <div> 4 </div>
+                        <div> 5 </div>
+                    </div>
+                    
+                    <p>Row-Reverse</p>
+                    <div>
+                        <div> 1 </div>
+                        <div> 2 </div>
+                        <div> 3 </div>
+                        <div> 4 </div>
+                        <div> 5 </div>
+                    </div>
+                    
+                    <div>
+                        <div>
+                            <p> Column </p> 
+                            <div>
+                                <div> 1 </div>
+                                <div> 2 </div>
+                                <div> 3 </div>
+                                <div> 4 </div>
+                                <div> 5 </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p> Column-Reverse </p>
+                            <div>
+                                <div> 1 </div>
+                                <div> 2 </div>
+                                <div> 3 </div>
+                                <div> 4 </div>
+                                <div> 5 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Cointainer :: Flex-Wrap </h2>
+                <p> (Properti ini dapat mengatur perpindahan baris pada layout flex jika item didalamnya overflow) </p>
+                <div>
+                    <div>
+                        <center>
+                            <p> No wrap </p>
+                        </center>
+                        <div>
+                            <div> 1 </div>
+                            <div> 2 </div>
+                            <div> 3 </div>
+                            <div> 4 </div>
+                            <div> 5 </div>
+                            <div> 6 </div>
+                            <div> 7 </div>
+                            <div> 8 </div>
+                            <div> 9 </div>
+                        </div>
+                    </div>
+                    <div>
+                        <center> <p> Wrap </p> </center>
+                        <div>
+                            <div> 1 </div>
+                            <div> 2 </div>
+                            <div> 3 </div>
+                            <div> 4 </div>
+                            <div> 5 </div>
+                            <div> 6 </div>
+                            <div> 7 </div>
+                            <div> 8 </div>
+                            <div> 9 </div>
+                        </div>
+                    </div>
+                    <div>
+                        <center> <p> Wrap-Reverse </p> </center>
+                        <div>
+                            <div> 1 </div>
+                            <div> 2 </div>
+                            <div> 3 </div>
+                            <div> 4 </div>
+                            <div> 5 </div>
+                            <div> 6 </div>
+                            <div> 7 </div>
+                            <div> 8 </div>
+                            <div> 9 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Container : Justify-Content </h2>
+                <p> (Properti ini dapat mengatur tata letak content secara horizontal yang ada didalem layout flex) </p>
+                <div>
+                    <div>
+                        <center>
+                            <p> Flex-Start </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p> Flex-End </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p> Center </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p> Space-Between </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p> Space-Around </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p> Space-Evenly </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Container : Align-Items </h2>
+                <p> (Properti ini dapat mengatur tata letak content secara vertikal yang ada didalem layout flex) </p>
+                <div>
+                    <div>
+                        <center>
+                            <p> Flex-Start </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p> Flex-End </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p> Center </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p> Stretch </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p> Baseline </p>
+                        </center>
+                        <div>
+                            <div> 1 </div>
+                            <div> 2 </div>
+                            <div> 3 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Container : Align-Content </h2>
+                <p> (Seperti align item yang dapat mengatur tata letak content secara vertikal, tetapi properti ini hanya berfungsi ketika content memiliki lebih dari 1-baris) </p>
+                <div>
+                    <div>
+                        <center>
+                            <p> Flex-Start </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p> Flex-End </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p> Center </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p> Space-Between </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p> Space-Around </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <center>
+                            <p> Space-Evenly </p>
+                        </center>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </body>
+</html>
+
+
+
+
+

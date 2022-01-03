@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/06 - DOM-EventBubbling.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Event Bubbling</title>
+    </head>
+    
+    <body>
+        <header> DOM EVENT BUBBLING </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h3> Event Bubbling :: Problem-1 </h3>
+                <p></p>
+                <div class="ContainerLayer">
+                    <div>
+                        <div class="Card">
+                            <span class="image">😎</span>
+                            <span>
+                                <p class="name">Agus</p>
+                                <p class="number">(0812345678)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😁</span>
+                            <span>
+                                <p class="name">Udin</p>
+                                <p class="number">(0818293912)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😝</span>
+                            <span>
+                                <p class="name">Otong</p>
+                                <p class="number">(0891238198)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">🧐</span>
+                            <span>
+                                <p class="name">Ucup</p>
+                                <p class="number">(0891289282)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <p> Click icon paint for change background parent</p>
+                    </div>
+                    <center>
+                        <br><br>
+                        <p> (Pada bagian ini terdapar problem, dikarenakan btn mempunyai event dan juga card mempunyai event, maka ketika event pada btn berjalan otomatis event pada card juga berjalan karena btn termasuk didalam card juga) </p>
+                        <p> (Artinya semua event yang bersangkutan dengan sedang terjadi akan dijalankan bersamaan)</p>
+                    </center>
+                </div>                
+            </div>
+            
+            <div class="LayoutParent">
+                <h3> Event Bubbling :: Solution-1 </h3>
+                <p></p>
+                <div class="ContainerLayer">
+                    <div>
+                        <div class="Card">
+                            <span class="image">😎</span>
+                            <span>
+                                <p class="name">Agus</p>
+                                <p class="number">(0812345678)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😁</span>
+                            <span>
+                                <p class="name">Udin</p>
+                                <p class="number">(0818293912)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😝</span>
+                            <span>
+                                <p class="name">Otong</p>
+                                <p class="number">(0891238198)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">🧐</span>
+                            <span>
+                                <p class="name">Ucup</p>
+                                <p class="number">(0891289282)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <p> Click icon paint for change background parent</p>
+                    </div>
+                    <center>
+                        <br><br>
+                        <p> (Masalah yang terjadi sebelumnya dapat ditangani menggunakan method stopPropagation pada suatu event tertentu) </p>
+                        <p> (dalam kasus ini kita ingin memberhentikan semua event ketika button paint dipencet, jadi hanya event khusus button saja yang berjalan event bubbling untuk parent dan lainnya tidak mau dijalankan)</p>
+                        <p> ( event.stopPropagation() ) </p>
+                    </center>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h3> Event Bubbling :: Problem-2 </h3>
+                <p></p>
+                <div class="ContainerLayer">
+                    <div>
+                        <div class="Card">
+                            <span class="image">😎</span>
+                            <span>
+                                <p class="name">Agus</p>
+                                <p class="number">(0812345678)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😁</span>
+                            <span>
+                                <p class="name">Udin</p>
+                                <p class="number">(0818293912)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😝</span>
+                            <span>
+                                <p class="name">Otong</p>
+                                <p class="number">(0891238198)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">🧐</span>
+                            <span>
+                                <p class="name">Ucup</p>
+                                <p class="number">(0891289282)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Action">
+                            <button> Add Card </button>
+                            <p> Click icon paint for change background parent</p>
+                        </div>
+                    </div>
+                    <center>
+                        <br><br>
+                        <p> (Pada solusi pertama masih terdapat masalah, jika terdapat perubahan pada card misal penambahan card pada suatu proses) </p>
+                        <p> (Jika itu terjadi, maka card baru tidak akan mendapatkan event, karena event hanya terdapat pada card yang dideklarasikan dari awal dan javascript berjalan sesuai card awalnya)</p>
+                    </center>
+                </div>                
+            </div>
+
+            <div class="LayoutParent">
+                <h3> Event Bubbling :: Solution-2 </h3>
+                <p></p>
+                <div class="ContainerLayer">
+                    <div>
+                        <div class="Card">
+                            <span class="image">😎</span>
+                            <span>
+                                <p class="name">Agus</p>
+                                <p class="number">(0812345678)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😁</span>
+                            <span>
+                                <p class="name">Udin</p>
+                                <p class="number">(0818293912)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😝</span>
+                            <span>
+                                <p class="name">Otong</p>
+                                <p class="number">(0891238198)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">🧐</span>
+                            <span>
+                                <p class="name">Ucup</p>
+                                <p class="number">(0891289282)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Action">
+                            <button class="btn-add"> Add Card </button>
+                            <p> Click icon paint for change background parent</p>
+                        </div>
+                    </div>
+                    <center>
+                        <br><br>
+                        <p> (Solusi ini adalah solusi yang paling efektif, karena kita memberikan event untuk container, artinya semua child berada pada satu event yang sama) </p>
+                        <p> (Selanjutnya kita hanya perlu menseleksi bagian mana yang di sedang terjadi suatu event dengan memanggil properti target)</p>
+                        <p> (Dari penyeleksian tersebut kita dapat menyesuaikan proses yang dari event terjadi dari setiap child pada containernya) </p>
+                    </center>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/06 - DOM-EventBubbling.js"></script>
+</html>

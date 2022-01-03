@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/02 - Create-Execution.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create & Excecution</title>
+    </head>
+    
+    <body>
+        <header> CREATE & EXCECUTION </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h3> Creation Phase </h3>
+                <p> (Proses paling awal yang terjadi pada javascript) </p>
+                <p> (pada tahap ini semua variable dan function sudah dibuat terlebih dahulu, maksudnya kita tetap dapat memanggil variable walaupun belum kita dekalrasikan) </p>
+                <div>
+                    Cobain sendiri panggil suatu variable atau fungsi, tapi deklarasiinnya setelah pemanggilan
+                </div>
+            </div>
+            <div class="LayoutParent">
+                <h3> Hoisting </h3>
+                <p> (Proses ini mendahulukan proses pendeklarasian variable dengan nilai deafultnya(undefined)) </p>
+                <p> (dan juga proses pendeklarasian function didahulukan dengan menyimpan semua proses dalam function) </p>
+                <p></p>
+                <div>
+                    Cobain sendiri panggil suatu variable atau fungsi, tapi deklarasiinnya setelah pemanggilan
+                </div>
+            </div>
+            <div class="LayoutParent">
+                <h3> Scope </h3>
+                <p> (Proses ini hanya mengulang kejadian seperti sebelumnya, hanya saja setiap block scope akan menjalankan Creation phase dan hoisting jika memang perlu dilakukan didalam functionnya) </p>
+                <div>
+                    Cobain sendiri panggil suatu variable atau fungsi didalem block scope, tapi deklarasiinnya setelah pemanggilan <br>
+                    sekalian cobain function yang numpuk biar keliatan kalo setiap block scope itu jalan proses creation dan excecution terlebih dahulu
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/02 - Create-Execution.js"></script>
+</html>

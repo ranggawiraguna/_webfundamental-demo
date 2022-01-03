@@ -1,0 +1,181 @@
+
+body {
+    background-color: #68CEFF;
+    margin: auto;
+    font-family: 'Alata', sans-serif;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: teal;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}
+
+#MainLayout {
+    position: fixed;
+    overflow: auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 10%;
+    padding-bottom: 100px;
+}
+
+.LayoutParent {
+    background-color: rgba(100, 250, 200, 80%);
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 20px 0;
+}
+
+.LayoutParent * {
+    margin: 0;
+}
+
+.LayoutParent > div {
+    margin: 10px 50px auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 50%);
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.LayoutParent h2, .LayoutParent p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.LayoutParent p {
+    color: white;
+    margin-bottom: 2px;
+}
+
+.LayoutParent > div {
+    position: relative;
+    height: 500px;
+    padding: 50px;
+}
+
+
+
+.LayoutParent:nth-child(1) > div div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+    background-color: lightgoldenrodyellow;
+}
+
+.LayoutParent:nth-child(1) div div:nth-child(1){
+    top: 50px;
+
+    line-height: 50px;
+}
+
+.LayoutParent:nth-child(1) div div:nth-child(2){
+    right: 50px;
+}
+
+.LayoutParent:nth-child(1) div div:nth-child(3){
+    bottom: 50px;
+}
+
+.LayoutParent:nth-child(1) div div:nth-child(4){
+    left: 50px;
+
+    opacity: 0.5;
+    line-height: 150px;
+}
+
+.LayoutParent:nth-child(1) div div:nth-child(5){
+    top: 250px;
+    bottom: 250px;
+}
+
+.LayoutParent:nth-child(1) div div:nth-child(6){
+    bottom: 50px;
+    right: 50px;
+}
+
+.LayoutParent:nth-child(1) div div:nth-child(7){
+    right: 50%;
+    left: 50%;
+}
+
+.LayoutParent:nth-child(1) div div:nth-child(8){
+    right: 50px;
+    top: 50%;
+    bottom: 50%;
+
+    line-height: 50px;
+}
+
+.LayoutParent:nth-child(1) div div:nth-child(9){
+    bottom: 50px;
+    left: calc(50% - (100px / 2)); /* Perhitungan yang benar pada center */
+
+    line-height: 50px;
+}
+
+
+
+.LayoutParent:nth-child(2) > div div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    opacity: 0.75;
+    text-align: center;
+    line-height: 200px;
+}
+
+.LayoutParent:nth-child(2) > div div:nth-child(1) {
+    z-index: 3;
+
+    left: calc(50% - 200px);
+    margin-top: 50px;
+    background-color: lightslategray;
+}
+
+.LayoutParent:nth-child(2) > div div:nth-child(2) {
+    z-index: 1;
+
+    left: calc(50% - 100px);
+    margin-top: 150px;
+    background-color: lightcoral;
+}
+
+.LayoutParent:nth-child(2) > div div:nth-child(3) {
+    z-index: 2;
+
+    left: calc(50% - 50px);
+    margin-top: 200px;
+    background-color: lightseagreen;
+}
+
+.LayoutParent:nth-child(2) > div div:nth-child(4) {
+    z-index: 2;
+
+    left: calc(50% + 0px);
+    margin-top: 250px;
+    background-color: lightsalmon;
+}
+
+

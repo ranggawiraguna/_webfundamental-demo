@@ -1,0 +1,163 @@
+
+body {
+    background-color: #68CEFF;
+    margin: auto;
+    font-family: 'Alata', sans-serif;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: teal;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    z-index: 9999999;
+}
+
+#MainLayout {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 10%;
+    padding-bottom: 50px;
+}
+
+.LayoutParent {
+    background-color: rgba(100, 250, 200, 80%);
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin: 20px 0;
+}
+
+.LayoutParent * {
+    margin: 0;
+}
+
+.LayoutParent > div {
+    margin: 20px 50px 10px;
+    padding: 15px 50px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 50%);
+    border-radius: 50px;
+    border: 2px solid lightcyan;
+}
+
+.LayoutParent h2, .LayoutParent p {
+    text-align: center;
+}
+
+.LayoutParent h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.LayoutParent p {
+    color: white;
+    margin: 2px;
+}
+
+.ContainerGrid {
+    margin: 30px auto;
+    box-sizing: border-box;
+    display: grid;
+    width: 100%;
+    border: 3px solid black;
+}
+
+.ContainerGrid > div {
+    background-color: lightgoldenrodyellow;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.ContainerGrid > div:nth-child(even) {
+    background-color: lightskyblue;
+}
+
+/* Start Styling */
+    /* Section Layer */
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(1) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(2) {
+            grid-template-columns: repeat(2, 1fr) repeat(3, 2fr); 
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(3) {
+            grid-template-columns: repeat(2, 2fr) 1fr repeat(2, 2fr); 
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(4) {
+            grid-template-rows: repeat(2, 2fr) 1fr repeat(2, 2fr);             
+
+            height: 300px;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(5) {
+            grid-template-columns: repeat(2, 2fr) 1fr repeat(2, 2fr); 
+            grid-template-rows: 2fr repeat(2, 1fr);             
+
+            height: 200px;
+        }
+    /* End Section Layer */
+
+    /* Section Layer */
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(1) {
+            grid-template-columns: 1fr min-content 1fr;
+        }
+
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(2) {
+            grid-template-columns: repeat(2, 1fr) max-content repeat(2, 1fr); 
+        }
+    /* End Section Layer */
+
+    /* Section Layer */
+        .LayoutParent:nth-child(3) .ContainerGrid:nth-child(1) {
+            grid-template-columns: repeat(auto-fill, 120px);
+        }
+
+        .LayoutParent:nth-child(3) .ContainerGrid:nth-child(2) {
+            grid-template-columns: repeat(auto-fit, 150px);
+        }
+    /* End Section Layer */
+
+
+    /* Section Layer */
+        .LayoutParent:nth-child(4) .ContainerGrid:nth-child(1) {
+            grid-template-columns: 1fr minmax(200px, 500px) 2fr;
+            grid-auto-flow: column;
+        }
+    /* End Section Layer */
+
+    /* Section Layer */
+        .LayoutParent:nth-child(8) div h3 {
+            font-size: 18px;
+            text-align: center;
+            text-decoration: underline;
+            color: teal;
+        }
+
+        ul.ContainerGrid {
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 50%);
+
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+    /* End Section Layer */
+
+/* End Styling */

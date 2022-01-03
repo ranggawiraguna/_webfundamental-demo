@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./../css/07_2-NestedLooping.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Looping</title>
+    </head>
+    
+    <body>
+        <header> NESTED LOOP </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <center>
+                    <h3> NESTED FOR </h3>
+                    <div class="SectionBlockContent">
+                        <table>
+                            <tr>
+                                <th> NO </th>
+                                <th> NIM </th>
+                                <th> Nama </th>
+                                <th> Jurusan </th>
+                                <th> Peminatan </th>
+                                <th> Alamat </th>
+                            </tr>
+                
+                            <tr>
+                                <td> 1 </td>
+                                <td id="layer1_Data11">  </td>
+                                <td id="layer1_Data12">  </td>
+                                <td id="layer1_Data13" class="CenterData">  </td>
+                                <td id="layer1_Data14" class="CenterData">  </td>
+                                <td id="layer1_Data15" class="CenterData">  </td>
+                            </tr>
+                
+                            <tr>
+                                <td> 2 </td>
+                                <td id="layer1_Data21">  </td>
+                                <td id="layer1_Data22">  </td>
+                                <td id="layer1_Data23" class="CenterData">  </td>
+                                <td id="layer1_Data24" class="CenterData">  </td>
+                                <td id="layer1_Data25" class="CenterData">  </td>
+                            </tr>
+                            <tr>
+                                <td> 3 </td>
+                                <td id="layer1_Data31">  </td>
+                                <td id="layer1_Data32">  </td>
+                                <td id="layer1_Data33" class="CenterData">  </td>
+                                <td id="layer1_Data34" class="CenterData">  </td>
+                                <td id="layer1_Data35" class="CenterData">  </td>
+                            </tr>                    
+                        </table>
+
+                        <button id="layer1-button" onclick="event_layer1(this.innerHTML)">LIHAT DATA</button>                                                
+                    </div>
+                </center>
+            </div>
+
+            <div class="LayoutParent">
+                <center>
+                    <h3> NESTED FOR-EACH </h3>
+                    <div class="SectionBlockContent">
+                        <table>
+                            <tr>
+                                <th> NO </th>
+                                <th> NIM </th>
+                                <th> Nama </th>
+                                <th> Jurusan </th>
+                                <th> Peminatan </th>
+                                <th> Alamat </th>
+                            </tr>
+                
+                            <tr>
+                                <td> 1 </td>
+                                <td id="layer2_Data11">  </td>
+                                <td id="layer2_Data12">  </td>
+                                <td id="layer2_Data13" class="CenterData">  </td>
+                                <td id="layer2_Data14" class="CenterData">  </td>
+                                <td id="layer2_Data15" class="CenterData">  </td>
+                            </tr>
+                
+                            <tr>
+                                <td> 2 </td>
+                                <td id="layer2_Data21">  </td>
+                                <td id="layer2_Data22">  </td>
+                                <td id="layer2_Data23" class="CenterData">  </td>
+                                <td id="layer2_Data24" class="CenterData">  </td>
+                                <td id="layer2_Data25" class="CenterData">  </td>
+                            </tr>
+                            <tr>
+                                <td> 3 </td>
+                                <td id="layer2_Data31">  </td>
+                                <td id="layer2_Data32">  </td>
+                                <td id="layer2_Data33" class="CenterData">  </td>
+                                <td id="layer2_Data34" class="CenterData">  </td>
+                                <td id="layer2_Data35" class="CenterData">  </td>
+                            </tr>                    
+                        </table>
+
+                        <button id="layer2-button" onclick="event_layer2(this.innerHTML)">LIHAT DATA</button>                                                
+                    </div>
+                </center>
+            </div>
+
+            <div class="LayoutParent">
+                <center>
+                    <h3> NESTED WHILE </h3>
+                    <div class="SectionBlockContent">
+                        <table>
+                            <tr>
+                                <th> NO </th>
+                                <th> NIM </th>
+                                <th> Nama </th>
+                                <th> Jurusan </th>
+                                <th> Peminatan </th>
+                                <th> Alamat </th>
+                            </tr>
+                
+                            <tr>
+                                <td> 1 </td>
+                                <td id="layer3_Data11">  </td>
+                                <td id="layer3_Data12">  </td>
+                                <td id="layer3_Data13" class="CenterData">  </td>
+                                <td id="layer3_Data14" class="CenterData">  </td>
+                                <td id="layer3_Data15" class="CenterData">  </td>
+                            </tr>
+                
+                            <tr>
+                                <td> 2 </td>
+                                <td id="layer3_Data21">  </td>
+                                <td id="layer3_Data22">  </td>
+                                <td id="layer3_Data23" class="CenterData">  </td>
+                                <td id="layer3_Data24" class="CenterData">  </td>
+                                <td id="layer3_Data25" class="CenterData">  </td>
+                            </tr>
+                            <tr>
+                                <td> 3 </td>
+                                <td id="layer3_Data31">  </td>
+                                <td id="layer3_Data32">  </td>
+                                <td id="layer3_Data33" class="CenterData">  </td>
+                                <td id="layer3_Data34" class="CenterData">  </td>
+                                <td id="layer3_Data35" class="CenterData">  </td>
+                            </tr>                    
+                        </table>
+
+                        <button id="layer3-button" onclick="event_layer3(this.innerHTML)">LIHAT DATA</button>                                                
+                    </div>
+                </center>
+            </div>
+
+            <div class="LayoutParent">
+                <center>
+                    <h3> NESTED MIX </h3>
+                    <div class="SectionBlockContent">
+                        <table>
+                            <tr>
+                                <th> NO </th>
+                                <th> NIM </th>
+                                <th> Nama </th>
+                                <th> Jurusan </th>
+                                <th> Peminatan </th>
+                                <th> Alamat </th>
+                            </tr>
+                
+                            <tr>
+                                <td> 1 </td>
+                                <td id="layer4_Data11">  </td>
+                                <td id="layer4_Data12">  </td>
+                                <td id="layer4_Data13" class="CenterData">  </td>
+                                <td id="layer4_Data14" class="CenterData">  </td>
+                                <td id="layer4_Data15" class="CenterData">  </td>
+                            </tr>
+                
+                            <tr>
+                                <td> 2 </td>
+                                <td id="layer4_Data21">  </td>
+                                <td id="layer4_Data22">  </td>
+                                <td id="layer4_Data23" class="CenterData">  </td>
+                                <td id="layer4_Data24" class="CenterData">  </td>
+                                <td id="layer4_Data25" class="CenterData">  </td>
+                            </tr>
+                            <tr>
+                                <td> 3 </td>
+                                <td id="layer4_Data31">  </td>
+                                <td id="layer4_Data32">  </td>
+                                <td id="layer4_Data33" class="CenterData">  </td>
+                                <td id="layer4_Data34" class="CenterData">  </td>
+                                <td id="layer4_Data35" class="CenterData">  </td>
+                            </tr>                    
+                        </table>
+
+                        <button id="layer4-button" onclick="event_layer4(this.innerHTML)">LIHAT DATA</button>                                                
+                    </div>
+                </center>
+            </div>
+
+            <div id="FlowPage">
+                <div>
+                    <img src="./../src/Images/IC_PreviousPage.png" onclick="location.href='./07_1-Looping.html';" width="80px" height="80px">
+                    <p> PREVIOUS </p>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/07_2-NestedLooping.js"></script>
+</html>
+
+
+
+
+

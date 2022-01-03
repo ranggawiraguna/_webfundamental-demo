@@ -1,0 +1,141 @@
+
+body {
+    background-color: aliceblue;
+    font-family: 'Product Sans';
+}
+
+header {
+    font-size: 48px;
+    color: aqua;
+    background-color: teal;
+    text-align: center;
+    padding: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.TabBar {
+    float: top;
+    background: lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#TabBar-Navigation {
+    border-radius: 50px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 15%;
+}
+
+#TabBar-Navigation-info {
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+    line-height: auto;
+    vertical-align: middle;
+    color: black;
+    text-decoration: none;
+}
+
+#TabBar-Navigation-info :hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.MainContentDiv {
+    text-align: center;
+    background-color: khaki;
+    padding: 15px;
+    padding-bottom: 25px;
+    vertical-align: middle;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+#MainContentDiv-title {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.MainContentDiv-content {
+    display: inline-block;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+#MainContentDiv-content-title {
+    font-size: 26px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#MainContentDiv-content-layout {
+    display: inline-block;
+    margin: 0px;
+}
+
+#MainContentDiv-content-item {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+}
+
+#MainContentDiv-content-item-avatar {
+    margin: 0px;
+}
+
+#MainContentDiv-content-item-info {
+    color: teal;
+    font-size: 24px;
+    margin: 20px;
+    margin-top: 0px;
+}
+
+#MainContentDiv-content-button {
+    background-color: #BA6373;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+}
+
+#MainContentDiv-content-button:hover {
+    cursor: pointer;
+    background-color: #CE97A1;
+}
+
+#MainContentDiv-content-button:focus {
+    outline: 0 !important;
+}
+
+.FooterDiv {
+    text-align: center;
+    height: 40px;
+    background: bisque;
+    clear: both;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

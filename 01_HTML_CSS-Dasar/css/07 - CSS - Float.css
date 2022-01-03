@@ -1,0 +1,49 @@
+
+body {
+    font-family: 'Product Sans';
+    margin: auto;
+}
+
+header {
+    font-size: 48px;
+    color: aqua;
+    background-color: teal;
+    text-align: center;
+    padding: 20px;
+}
+
+.Layout {
+    width: 100%;
+    height: 645px;
+    box-sizing: border-box;
+}
+
+.LayoutLeft {
+    float: left;
+    width: 20%;
+    height: 645px;
+    background-color: antiquewhite;
+}
+
+.LayoutCenter {
+    float: none;
+    display: inline-flex;
+    justify-content: center;
+    background-color: khaki;
+    float: none;    
+    width: 60%;
+    height: 645px;
+}
+
+.LayoutRight {
+    float: right;
+    width: 20%;
+    background-color: antiquewhite;
+    height: 645px;
+}
+
+.Footer {
+    width: 100%;
+    height: 50px;
+    background-color: bisque;
+}

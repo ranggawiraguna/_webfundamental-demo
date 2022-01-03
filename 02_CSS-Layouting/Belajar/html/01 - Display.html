@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/01 - Display.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display</title>
+    </head>
+    
+    <body>
+        <header> DISPLAY </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h2> inline </h2>
+                <p> (Membuat layout elemen menjadi satu baris dengan layout elemen setelahnya) </p>
+                <p> (ukuran dari layout ini menyesuaikan dari isi content yang ada didalamnya) </p>
+                <p> (display ini tidak terpengaruh oleh property width dan height, kecuali pada tag img) </p>
+                <center>
+                    <div> Layout 1 </div>
+                    <div> Layout 2 </div>
+                    <div> Layout 3 </div>
+                    <div> Layout 4 </div>
+                    <div> Layout 5 </div>
+                    <img src="./../src/Images/Avatar_Male.png" alt="">
+                </center>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> block </h2>
+                <p> (Membuat layout elemen menjadi berbeda baris dengan layout elemen setelahnya) </p>
+                <p> (ukuran lebar dari layout ini menyesuaikan dari ukuran parentnya, dan tinggi menyesuaikan isi contentnya) </p>
+                <p> (tetapi, display ini dapat terpengaruh oleh property width dan height) </p>
+                <center>
+                    <div> Layout 1 </div>
+                    <div> Layout 2 </div>
+                    <div> Layout 3 </div>
+                    <div> Layout 4 </div>
+                    <div> Layout 5 </div>
+                </center>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> inline-block </h2>
+                <p> (Display ini adalah gabungan dari inline dan block) </p>
+                <p> (jadi layout ini bersifat inline, tetapi property width dan height juga berlaku) </p>
+                <center>
+                    <div> Layout 1 </div>
+                    <div> Layout 2 </div>
+                    <div> Layout 3 </div>
+                    <div> Layout 4 </div>
+                    <div> Layout 5 </div>
+                </center>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> none </h2>
+                <p> (Display ini membuat layout menjadi hilang dari tempatnya) </p>
+                <center>
+                    <div> Layout 1 </div>
+                    <div> Layout 2 </div>
+                    <div> Layout 3 </div>
+                    <div> Layout 4 </div>
+                    <div> Layout 5 </div>
+                </center>
+            </div>
+        </div>    
+    </body>
+</html>
+
+
+
+
+

@@ -1,0 +1,57 @@
+
+body {
+    background-color: aliceblue;
+    font-family: 'Product Sans';
+}
+
+header {
+    font-size: 48px;
+    color: aqua;
+    background-color: teal;
+    text-align: center;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#sideBar {
+    width : 20%; 
+    height: 600px;            
+    background: lightgray; 
+    padding: 10px;
+
+}
+
+#mainContent {
+    text-align: center; 
+    width : 80%; 
+    height : 600px; 
+    background: khaki; 
+    padding: 10px;
+}
+
+#footer {
+    text-align: center;
+    padding: 10px;
+    height: 40px;
+    background: bisque;            
+}
+
+.titleDivision {
+    margin: 0px;
+    font-size: 24px; 
+    text-decoration: underline;
+}
+
+.itemNavigation_Display {
+    padding: 5px;            
+}
+
+.itemNavigation_Item {
+    font-size: 20px;
+    display: inline;
+    margin-right: 10px;
+    vertical-align: middle;
+}

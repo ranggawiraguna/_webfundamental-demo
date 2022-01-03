@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./../css/08_3-Rekursif.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Function</title>
+    </head>
+    
+    <body>
+        <header> Rekursif </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <div>
+                    <h3> Basic Rekursif </h3>
+                    <p> (Teknik ini adalah teknik yang memanggil function didalam function itu sendiri) </p>
+                    <p> (Teknik ini akan terus mengulang untuk memanggil dirinya sendiri sampai kondisi yang sudah ditentukan) </p>
+                    <p> (Kondisi yang menjadi penentu untuk rekursif berhenti disebut dengan basecase) </p>
+                    <div class="SectionBlockContent">
+                        <div>
+                            <input placeholder="Masukkan banyak pemanggilan rekursif">
+                            <button onclick="event_layer1_clear(); event_layer1(document.querySelector('.LayoutParent:nth-child(1) .SectionBlockContent input').value);">CALL</button>
+                        </div>
+                        <br>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="FlowPage">
+                <div>
+                    <img src="./../src/Images/IC_PreviousPage.png" onclick="location.href='./08_2-Parameter&Argument.html';" width="80px" height="80px">
+                    <p> PREVIOUS </p>
+                </div>
+                <div>
+                    <img src="./../src/Images/IC_NextPage.png" onclick="location.href='./08_4-Declaration&Expression.html';" width="80px" height="80px">
+                    <p> NEXT </p>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/08_3-Rekursif.js"></script>
+</html>
+
+
+
+
+

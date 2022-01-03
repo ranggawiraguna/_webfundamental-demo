@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/__tools.css">
+    <link rel="stylesheet" href="./../css/02 - Container-2.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Grid Container</title>
+    </head>
+    
+    <body>
+        <header> CSS GRID CONTAINER (2) </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h2> Repeat </h2>
+                <p> (Function ini dapat digunakan untuk mengulang suatu nilai yang sama pada saat menetapkan nilai dari kolom/baris)</p>
+                <div>
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                    </div>
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                    </div>
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                    </div>
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                        <div>11</div>
+                        <div>12</div>
+                        <div>13</div>
+                        <div>14</div>
+                        <div>15</div>
+                    </div>
+                </div>
+            </div>
+            <div class="LayoutParent">
+                <h2> Repeat </h2>
+                <p> (Value ini membuat ukuran dari item menjadi relative trhadap isi zontent didalamnya sesuai value yang diberikan)</p>
+                <div>
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, excepturi?</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cum.</div>
+                        <div>9</div>
+                        <div>10</div>
+                    </div>
+                </div>
+            </div>
+            <div class="LayoutParent">
+                <h2> Auto Fill & Auto Fit </h2>
+                <p> (Properti ini dapat mengatur otomatis penempatan tata letak item sesuai isi contentnya</p>
+                <p> (Jadi jumlah kolom/baris ditentukan oleh isi content dari itemnya) </p>
+                <p> (Bedanya Auto fill dengan Auto fit adalah penentuan akhir gridnya, auto-fill akan mengambil 1 bagian kosong untuk menjadi track akhir gridnya, sedangkan auto-fit akan membuat track akhir berada di akhir contentnya) </p>
+                <div>
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>  
+                </div>
+            </div>
+            <div class="LayoutParent">
+                <h2> Minmax </h2>
+                <p> (Properti ini dapat mengatur ukuran minimum dan maksimum dari item pada grid) </p>
+                <p> (Item yang menggunakan properti ini akan memakai ukuran maksimum dan bila resolusi layar diperkecil, maka item akan ikut mengecil sampai batas minimumnya) </p>
+                <p> (Jadi item yang ada pada grid jika menggunakan minmax ukuran dari itemnya akan relative terhadap parentnya) </p>
+                <div>
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="LayoutParent">
+                <h2> Testing </h2>
+                <div>
+                    <h3> Image Gallery </h3>
+                    <ul class="ContainerGrid">
+                        <li><img src="./../src/Images/Product-1.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-2.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-3.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-4.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-5.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-6.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-7.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-8.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-9.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-10.jpg" width="100%" style="display: block;"></li>
+
+                        <li><img src="./../src/Images/Product-1.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-2.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-3.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-4.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-5.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-6.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-7.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-8.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-9.jpg" width="100%" style="display: block;"></li>
+                        <li><img src="./../src/Images/Product-10.jpg" width="100%" style="display: block;"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </body>
+</html>
+
+
+
+
+

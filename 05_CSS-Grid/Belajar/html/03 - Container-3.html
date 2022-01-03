@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/__tools.css">
+    <link rel="stylesheet" href="./../css/03 - Container-3.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Grid Container</title>
+    </head>
+    
+    <body>
+        <header> CSS GRID CONTAINER (3) </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h2> Grid Template Area </h2>
+                <p> (Properti ini mendefinisikan suatu area pada tata letak grid, yang nantinya area tersebut akan ditempati oleh item yang ada didalam grid) </p>
+                <div>
+                    <div class="ContainerGrid">
+                        <div> HEADER </div>
+                        <div> SIDEBAR </div>
+                        <div> MAIN-CONTENT </div>
+                        <div> FOOTER</div>
+                    </div>
+    
+                    <div class="ContainerGrid">
+                        <div> HEADER </div>
+                        <div> HERO_IMAGE </div>
+                        <div> SIDEBAR </div>
+                        <div> MAIN-CONTENT </div>
+                        <div> FOOTER</div>
+                    </div>
+    
+                    <div class="ContainerGrid">
+                        <div> HEADER </div>
+                        <div> SIDEBAR-LEFT </div>
+                        <div> MAIN-CONTENT </div>
+                        <div> SIDEBAR-RIGHT </div>
+                        <div> FOOTER</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Grid Template :: Shorthand </h2>
+                <p> ("area-row-1" size-row-1 "area-row-n" size-row-n / size-column-1 size-column-n ) </p>
+                <p> (Properti ini dapar menuliskan tata letak grid secara bersamaan == [area] row / column) </p>
+                <div>
+                    <div class="ContainerGrid">
+                        <div> HEADER </div>
+                        <div> SIDEBAR </div>
+                        <div> MAIN-CONTENT </div>
+                        <div> FOOTER</div>
+                    </div>
+
+                    <div class="ContainerGrid">
+                        <div> HEADER </div>
+                        <div> SIDEBAR-LEFT </div>
+                        <div> MAIN-CONTENT </div>
+                        <div> SIDEBAR-RIGHT </div>
+                        <div> FOOTER</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Grid Gap </h2>
+                <div>
+                    <div class="ContainerGrid">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>                        
+                    </div>
+
+                    <div class="ContainerGrid">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>                        
+                    </div>
+
+                    <div class="ContainerGrid">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>                        
+                    </div>
+
+                    <div class="ContainerGrid">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Grid :: Shorthand Full </h2>
+                <div class="ContainerGrid">
+                    <p style="display: inline-block;"> grid: </p>
+                    <p style="display: inline-block;"> none|grid-template-rows / grid-template-columns|grid-template-areas|grid-template-rows / [grid-auto-flow] grid-auto-columns|[grid-auto-flow] grid-auto-rows / grid-template-columns|initial|inherit; </p>
+                </div>
+            </div>
+        </div>    
+    </body>
+</html>
+
+
+
+
+

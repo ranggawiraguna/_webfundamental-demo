@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/04 - Float_1.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Float</title>
+    </head>
+    
+    <body>
+        <header> FLOAT 1 </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h2> Float </h2>
+                <p> (Properti ini akan membuat layout terbang ke kiri/kanan parentnya) </p>
+                <p> (Posisi awal dari layout ini akan mengikutin normal flownya, tetapi layot ini tidak mengambil posisi static / normal flow pada parent) </p>
+                <div>
+                    <div> 1. none </div>
+                    <div> 2. left </div>                    
+                    <div> 3. default </div>
+                    <div> 4. right </div>
+                    <div> 5. default </div>
+                    <div> 6. default </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Float :: Text Wrapping  </h2>
+                <p> (Properti float akan berpengaruh pada sebuah teks) </p>
+                <p> (Sehingga membuat teks pada layout yang sama seperti mengelilingi layout float) </p>
+                <div>
+                    <div>  
+                        <img src="./../src/Images/Avatar_Male.png" alt="" width="40%">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestias ipsam in deserunt exercitationem fuga enim quasi magni dolorem reprehenderit sed officiis, neque, culpa maxime! Ab, officia vero cupiditate quibusdam aspernatur atque nesciunt. Consequuntur, perferendis tempore iure inventore incidunt dolorem autem placeat! Assumenda enim sit minus, distinctio quam dolor ducimus? </p>
+                    </div>
+                    <div>  
+                        <center> <img src="./../src/Images/Avatar_Male.png" alt="" width="40%"> </center>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestias ipsam in deserunt exercitationem fuga enim quasi magni dolorem reprehenderit sed officiis, neque, culpa maxime! Ab, officia vero cupiditate quibusdam aspernatur atque nesciunt. Consequuntur, perferendis tempore iure inventore incidunt dolorem autem placeat! Assumenda enim sit minus, distinctio quam dolor ducimus? </p>
+                    </div>
+                    <div> 
+                        <img src="./../src/Images/Avatar_Male.png" alt="" width="40%">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestias ipsam in deserunt exercitationem fuga enim quasi magni dolorem reprehenderit sed officiis, neque, culpa maxime! Ab, officia vero cupiditate quibusdam aspernatur atque nesciunt. Consequuntur, perferendis tempore iure inventore incidunt dolorem autem placeat! Assumenda enim sit minus, distinctio quam dolor ducimus? </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Float :: Image Galery </h2>
+                <p> (Properti float dapat membuat elemen bergerak secara float atau berutun sesuai dengan posisi floatnya) </p>
+                <div>
+                    <div> Gambar-1</div>
+                    <div> Gambar-2</div>
+                    <div> Gambar-3</div>
+                    <div> Gambar-4</div>
+                    <div> Gambar-5</div>
+                    <div> Gambar-6</div>
+                    <div> Gambar-7</div>
+                    <div> Gambar-8</div>
+                    <div> Gambar-9</div>
+                    <div> Gambar-10</div>
+                    <div> Gambar-11</div>
+                    <div> Gambar-12</div>
+                </div>
+                <div>
+                    <div> Gambar-1</div>
+                    <div> Gambar-2</div>
+                    <div> Gambar-3</div>
+                    <div> Gambar-4</div>
+                    <div> Gambar-5</div>
+                    <div> Gambar-6</div>
+                    <div> Gambar-7</div>
+                    <div> Gambar-8</div>
+                    <div> Gambar-9</div>
+                    <div> Gambar-10</div>
+                    <div> Gambar-11</div>
+                    <div> Gambar-12</div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Float :: Multi-Column  </h2>
+                <p> (Properti float dapat membagi layout menjadi beberapa column) </p>
+                <p> (Tetapi harus menyesuaikan dengan ukuran dari parent nya) </p>
+                <div>
+                    <div> Layout Left </div>
+                    <div> Layout Center </div>                    
+                    <div> Layout Right </div>                    
+                </div>
+            </div>
+        </div>    
+    </body>
+</html>
+
+
+
+
+

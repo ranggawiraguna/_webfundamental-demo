@@ -1,0 +1,165 @@
+body {
+    font-family: 'Product Sans';
+    background-color: #FFFBDF;
+    margin: auto;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #B5768A;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}
+
+#MainContent {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    margin: auto;
+    padding: 20px 30px 20px 30px;
+}
+
+
+.Listing {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.MainContent ol {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: black;    
+}
+
+.MainContent ol.Listing {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: darkgray;
+}
+
+
+
+
+.Listing h3 {
+    margin: 0px;
+    margin-left: -25px;
+    font-weight: bold;
+    color: black;
+}
+
+ol.Listing h3 {
+    margin: 0px;
+    margin-left: -25px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+
+
+.Listing li {
+    color: black;
+}
+
+#MainContent .Listing li {
+    color: white;
+}
+
+
+
+.Listing .firstData {
+    color: black;
+    margin-top: 5px;
+}
+
+.MainContent .Listing .firstData{
+    color: blue;
+    margin-top: 5px;
+}
+
+#MainContent .Listing .firstData{
+    color: blue;
+    margin-top: 5px;
+}
+
+
+.MainContent ol li {
+    color: black;
+}
+
+#MainContent ul li {
+    color: black;
+}
+
+#MainContent .Listing li {
+    color: greenyellow;    
+}
+
+
+div.Notes {
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.MainContent .Notes {
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#MainContent .Notes {
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.Notes h4#titleSatu {
+    color: red;
+}
+
+.Notes h4 {
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.Notes h4.title {
+    text-align: left;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.Notes p {
+    font-size: 14px;
+    text-indent: 10px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+

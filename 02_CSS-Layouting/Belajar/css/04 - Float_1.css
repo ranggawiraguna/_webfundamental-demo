@@ -1,0 +1,206 @@
+
+body {
+    background-color: #68CEFF;
+    margin: auto;
+    font-family: 'Alata', sans-serif;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: teal;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}
+
+#MainLayout {
+    position: fixed;
+    overflow: auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 10%;
+    padding-bottom: 100px;
+}
+
+.LayoutParent {
+    background-color: rgba(100, 250, 200, 80%);
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin: 20px 0;
+}
+
+.LayoutParent * {
+    margin: 0;
+}
+
+.LayoutParent > div {
+    margin: 20px 50px auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 50%);
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.LayoutParent > div:last-of-type {
+    margin-bottom: 10px;
+}
+
+.LayoutParent h2, .LayoutParent p {
+    text-align: center;
+}
+
+.LayoutParent p {
+    color: white;
+}
+
+.LayoutParent div > div {
+    margin: 20px auto;
+}
+
+.LayoutParent > div {
+    border: 2px solid lightcyan;
+}
+
+
+
+.LayoutParent:nth-child(1) > div div{
+    text-align: center;
+    line-height: 100px;
+    width: 200px;
+    height: 100px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: lightcoral;
+}
+
+.LayoutParent:nth-child(1) > div div:nth-child(1){
+    float: none;
+}
+
+.LayoutParent:nth-child(1) > div div:nth-child(2){
+    float: left;
+
+    margin-left: 100px;
+    background-color: lightgoldenrodyellow;
+}
+
+.LayoutParent:nth-child(1) > div div:nth-child(4){
+    float: right;
+
+    margin-right: 100px;
+    background-color: lightgoldenrodyellow;
+}
+
+
+
+.LayoutParent:nth-child(2) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LayoutParent:nth-child(2) > div div {
+    display: inline-block;
+    width: 30%;
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 20px;
+    border: 1px solid gray;
+}
+
+.LayoutParent:nth-child(2) > div div p {
+    text-align: justify;
+    text-indent: 20px;
+    color: black;
+}
+
+.LayoutParent:nth-child(2) > div div:nth-child(1) img {
+    float: left;
+    margin: 0 10px -10px 0;
+}
+
+.LayoutParent:nth-child(2) > div div:nth-child(2) img {
+    float: none;
+}
+
+
+.LayoutParent:nth-child(2) > div div:nth-child(3) img {
+    float: right;
+    margin: 0 0 -10px 10px;
+}
+
+
+
+.LayoutParent:nth-child(3) > div {
+    padding: 50px;
+    height: 320px;
+}
+
+.LayoutParent:nth-child(3) > div div{
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    text-align-last: center;
+    line-height: 150px;
+    border: 2px solid lightcyan;
+}
+
+.LayoutParent:nth-child(3) > div:nth-child(3) div{
+    float: left;
+
+    background-color: lightcoral;
+}
+
+.LayoutParent:nth-child(3) > div:nth-child(4) div{
+    float: right;
+
+    background-color: lightsalmon;
+}
+
+
+
+.LayoutParent:nth-child(4) > div {
+    padding: 0;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.LayoutParent:nth-child(4) > div div {
+    text-align: center;
+    line-height: 400px;
+    margin: 0;
+    float: left;
+    height: 100%;
+}
+
+.LayoutParent:nth-child(4) > div div:nth-child(1) {
+    width: 10%;
+    background-color: lightcoral;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.LayoutParent:nth-child(4) > div div:nth-child(2) {
+    width: 70%;
+    background-color: lightsalmon;
+}
+
+.LayoutParent:nth-child(4) > div div:nth-child(3) {
+    width: 20%;
+    background-color: lightseagreen;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

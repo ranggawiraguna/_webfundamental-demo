@@ -1,0 +1,41 @@
+body {
+    font-family: 'Product Sans';
+    background-color: #FFFBDF;
+    margin: auto;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #B5768A;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}
+
+#MainContent {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    margin: auto;
+    padding: 20px 30px 20px 30px;
+}
+
+.InheritanceProperty {
+    color: red;
+    font: italic small-caps bold 16px 'ProductSans', sans-serif;
+    letter-spacing: 10px;
+    line-height: 10px;
+    list-style: circle;
+    text-align: justify;
+    text-indent: 20px;
+    text-transform: capitalize;
+    visibility: visible;
+    white-space: normal;
+}

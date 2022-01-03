@@ -1,0 +1,213 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 2vh;
+    background-color: #68CEFF;
+    font-family: 'Alata', sans-serif;
+    background-image: url(./../src/Images/Patterns_Swirl.png);
+    box-sizing: border-box;
+} 
+
+#MainLayout {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 96vh;
+    background-color: rgba(200, 200, 200, 80%);
+    border-radius: 10px;
+    padding: 40px 50px 50px;
+}
+
+.ListSection{
+    width: 100%;
+    border: 5px solid rgba(0, 0, 0, 20%);
+    border-left-width: 0;
+    border-right-width: 0;
+    padding: 2px;
+    margin: 50px auto;
+}
+
+.ListSection:last-of-type{
+    margin-bottom: 0;
+}
+
+    /* Start Latihan-1 */
+        #Container-1 {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #Container-1 > div > h1{
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #Container-1 > div > h2{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #Container-1 ul li a {
+            line-height: 1.5;
+            color: teal;
+            text-decoration: none;
+        }
+
+        #Container-1 ul {
+            list-style: disc;
+        }
+
+        #MainContent {
+            flex: 5;
+            order: 2;
+
+            margin: auto 50px;
+        }
+
+        #MainContent > p {
+            line-height: 1.2;
+            text-indent: 50px;
+            text-align: justify;
+        }
+
+        #SideBar-left {
+            flex: 1;
+            order: 1;
+        }
+
+        #SideBar-right {
+            flex: 2;
+            order: 3;
+        }
+    /* End Latihan-1 */
+
+    /* Start Layihan-2 */
+        #Container-2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #Container-2 > div {
+            box-sizing: border-box;
+            padding: 20px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        #Container-2 > div:nth-child(1) {
+            background-color: lightcoral;
+        }
+
+        #Container-2 > div:nth-child(2) {
+            background-color: lightsalmon;
+        }
+
+        #Container-2 > div:nth-child(3) {
+            background-color: khaki;
+        }
+
+        #Container-2 > div h3 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* Mobile Portrait Resolution */
+        @media screen and (max-width:576px){
+            #Container-2 {
+                display: block;
+            }    
+
+            #Container-2 > div {
+                margin: 20px;
+                width: 100%;
+            }
+        }
+    /* End Latihan-2*/
+
+    /* Start Latihan-3 */
+        #Container-3 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    
+        #Container-3 > div {
+            width: 20%;
+        }
+
+        /* Mobile Portrait Resolution */
+        @media screen and (max-width:576px){
+            #Container-3 {
+                justify-content: space-evenly;
+                align-content: space-between;
+            }    
+
+            #Container-3 > div {
+                width: 33%;
+            }
+        }
+
+    /* End Latihan-3 */
+
+    /* Start Latihan-4 */
+        #Container-4{
+            display: flex;
+        }
+
+        .card {
+            background-color: whitesmoke;
+            box-shadow: 0px 0px 5px 2px rgba(100, 100, 100, 50%);
+            margin: 50px;
+            border-radius: 10px;
+            overflow: hidden;
+            flex: 1;
+        }
+
+        .card > div:nth-child(1) {
+            height: 200px;
+            background-color: gray;
+        }
+
+        .card > div:nth-child(2) {
+            padding: 20px;
+            text-align: center  ;
+        }
+
+        .card > div > button {
+            margin: 20px;
+            margin-bottom: 0;
+        }
+
+        .card:nth-child(2) {
+            transform: scale(1.2);
+        }
+    /* End Latihan-4*/
+
+    /* Start Latihan-5 */
+        #Container-5 {
+            display: flex;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border: 5px solid black;
+        }
+
+        #Container-5 > div {
+            font-size: 14px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            background-color: lightgoldenrodyellow;
+            margin: auto;
+
+            display: flex;
+        }
+    
+        #Container-5 > div span{
+            margin: auto;
+        }
+    /* End Latihan-5 */

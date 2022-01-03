@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/04 - Float_2.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Float</title>
+    </head>
+    
+    <body>
+        <header> FLOAT 2  </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h2> Float</h2>
+                <p> (Properti ini tidak dianggap oleh parent nya, karena itu ukuran dari parent tidak berpengaruh dengan layout float) </p>
+                <p> (Sehingga layout float seakan keluar dari parentnya) </p>
+                <div>
+                    <p> Problem </p>
+                    <div> 1. none </div>
+                    <div> 2. left </div>        
+                    <div> 3. right </div>
+                </div>
+
+                <div>
+                    <p> Solution-1 :: Overflow Auto </p>
+                    <div> 1. none </div>
+                    <div> 2. left </div>        
+                    <div> 3. right </div>
+                </div>
+
+                <div>
+                    <p> Solution-2 :: Clear Float </p>
+                    <!-- 
+                        buat div kosong disetelah layout float dengan style clear
+                        clear:left  (membersihkan float left)
+                        clear:right (membersihkan float right) 
+                        clear:both  (membersihkan float keduanya)
+                    -->
+                    <div> 1. none </div>
+                    <div> 2. left </div>        
+                    <div> 3. right </div>
+                    <div></div>
+                </div>
+
+                <div class="cf">
+                    <p> Solution-2 :: Clear Float with tools fix </p>
+                    <div> 1. none </div>
+                    <div> 2. left </div>        
+                    <div> 3. right </div>
+            </div>
+        </div>    
+    </body>
+</html>
+
+
+
+
+

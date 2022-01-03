@@ -1,0 +1,208 @@
+/* CSS Reset & Class Clear Float */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, nav  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+nav { display: block; }
+
+body { line-height: 1; }
+
+ul { list-style: none; }
+
+.cf::after, .cf::before{
+    display: table;
+    content: " ";
+}
+
+.cf{ *zoom: 1; }
+
+.cf::after{ clear: both; }
+    
+
+/* Start Styling */
+body{
+    font-family: 'Alata', sans-serif;
+    background-color: whitesmoke;
+}
+
+nav {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: teal;
+
+    padding: 10px auto;
+}
+
+nav #Logo {
+    flex: 2;
+
+    margin-left: 2vw;
+}
+
+nav #NavigationMenu-Normal {
+    flex: 15;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-left: 10vw;
+}
+
+.NavigationMenu li{
+    /* Space Bangsat */
+    margin-top: -0.8vh;
+}
+
+.NavigationMenu li a {
+    /* font-size: 1.4vw; */
+    font-size: 18px;
+    color: lightyellow;
+    text-decoration: none;
+}
+
+.NavigationMenu li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Hide element, because this only for mobile resolution */
+    #NavigationMenu-Mobile {
+        display: none;
+    }
+
+    #MenuToggle {
+        display: none;
+    }
+/* End Hide element*/
+
+/* Breakpoint Responsive */
+    /* Mobile Landscape and Tablet Resolution*/
+    @media screen and (max-width:768px){
+        #NavigationMenu-Normal li a {
+            /* font-size: 1.4vw; */
+            font-size: 14px;
+        } 
+
+
+    }
+
+    /* Mobile Portrait Resolution*/
+    @media screen and (max-width:576px){
+        nav {
+            justify-content: center;
+        }
+
+        nav #NavigationMenu-Normal {
+            display: none;
+        }
+
+        nav #Logo {
+            flex: none;
+            margin-left: 0;
+            width: 25%;
+        }
+
+
+        #NavigationMenu-Mobile {
+            position: fixed;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            top: 0; right: 0;
+            height: 100vh;
+            background-color: rgb(0, 100, 100);
+            flex: none;
+            flex-direction: column;
+            margin-left: 0;
+
+            width: 0;
+            opacity: 0;
+            transition: all 1s;
+        }
+
+        #NavigationMenu-Mobile.Slide {
+            opacity: 1;
+            width: 50vw;
+        }
+        
+        #MenuToggle {
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 30%; right: 3vh;
+            height: 40%;
+            box-sizing: border-box;
+
+            opacity: 1;
+        }    
+
+        #MenuToggle input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+        #MenuToggle img {
+            content:url("./../src/Images/IC_NAV_Menu.png");
+        }
+
+        #MenuToggle input:checked ~ img{
+            content:url("./../src/Images/IC_NAV_Close.png");        
+        }
+    }
+/* End Breakpoint Responsive */
+
+
+
+
+
+/* MainContent Styling */
+    #MainContent {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .Page {
+        width: 100%;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .Page > div {
+        margin: 25px;
+    }
+
+    .Page:target {
+        transition: all 1s 0.5s;
+
+        height: auto;
+        overflow: auto;
+        opacity: 1;
+    }
+
+    .Page:target ~ .Page {
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+/* End MainContent Styling */

@@ -1,0 +1,114 @@
+
+body {
+    background-color: #68CEFF;
+    margin: auto;
+    font-family: 'Alata', sans-serif;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: teal;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    z-index: 99999;
+}
+
+#MainLayout {
+    overflow: auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 10%;
+    padding-bottom: 100px;
+}
+
+.LayoutParent {
+    background-color: rgba(100, 250, 200, 80%);
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 20px 0;
+}
+
+.LayoutParent * {
+    margin: 0;
+}
+
+.LayoutParent > div {
+    margin: 20px 50px auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 50%);
+    border-radius: 50px;
+}
+
+.LayoutParent h2, .LayoutParent p {
+    text-align: center;
+}
+
+.LayoutParent p {
+    color: white;
+}
+
+.LayoutParent > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LayoutParent div div {
+    width: 200px;
+    height: 200px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid gray;
+    margin: 10px 1px;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 10px;
+}
+
+
+
+.LayoutParent:nth-child(1) div div {
+    position: static;
+}
+
+
+
+.LayoutParent:nth-child(2) div div:nth-child(2) {
+    position: relative;
+
+    background-color: lightsalmon;
+}
+
+
+.LayoutParent:nth-child(3) div div:nth-child(2) {
+    position: absolute;
+
+    background-color: lightcoral;
+    opacity: 0.8;
+}
+
+
+.LayoutFixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    height: 200px;
+    background-color: teal;
+    border-radius: 25px;
+    border: 2px solid rgba(255, 255, 255, 50%);
+    text-align: center;
+    line-height: 200px;
+    color: white;
+}

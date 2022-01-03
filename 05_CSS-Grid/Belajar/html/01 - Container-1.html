@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/__tools.css">
+    <link rel="stylesheet" href="./../css/01 - Container-1.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Grid Container</title>
+    </head>
+    
+    <body>
+        <header> CSS GRID CONTAINER (1) </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h2> Columns & Rows </h2>
+                <p> (Properti ini mengatur jumlah baris&kolom beserta ukuran dari masing-masing nya)</p>
+                <p> (jadi susunan item disusun secara terurut oleh grid sesuai flow yang ditentukan) </p>
+                <div>
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Implicit & Explicit </h2>
+                <p> (Ingat bahwa grid akan mengatur otomatis ukuran dari indeks item yang tidak dideklarasikan oleh containernya)</p>
+                <p> (Implicit adalah suatu indeks yang tidak dideklarasikan oleh containernya, dan Explicit adalah sebaliknya) </p>
+                <p> (Dalam hal ini kita dapat mengatur default ukuran dari item yang implicit) </p>
+                <div>
+                    <div class="ContainerGrid">
+                        <div>1 (E) </div>
+                        <div>2 (E) </div>
+                        <div>3 (E) </div>
+                        <div>4 (E) </div>
+                        <div>5 (E) </div>
+                        <div>6 (E) </div>
+                        <div>7 (I) </div>
+                        <div>8 (I) </div>
+                        <div>9 (I) </div>
+                    </div>
+
+                    <div class="ContainerGrid">
+                        <div>1 (E) </div>
+                        <div>2 (E) </div>
+                        <div>3 (E) </div>
+                        <div>4 (E) </div>
+                        <div>5 (E) </div>
+                        <div>6 (E) </div>
+                        <div>7 (I) </div>
+                        <div>8 (I) </div>
+                        <div>9 (I) </div>
+                        <div>10 (I) </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Auto Flow </h2>
+                <p> (Properti ini dapat mengatur urutan dari tata letak layout atau penempatan item pada grid) </p>
+                <div>
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <h2> Grid Fraction </h2>
+                <p> (Value ini dapat memberikan ukuran dari item grid berdasarkan perbandingan, jadi ukurannya akan dikalkulasikan otomatis sesuai skala perbanding fr oleh grid sesuai ukuran maksimalnya)</p>
+                <div>
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+
+                    <div class="ContainerGrid">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </body>
+</html>
+
+
+
+
+

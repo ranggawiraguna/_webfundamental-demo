@@ -1,0 +1,301 @@
+/* CSS Reset & Class Clear Float */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, nav  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+nav { display: block; }
+
+body { line-height: 1; }
+
+ul { list-style: none; }
+
+a { text-decoration: none;}
+
+.cf::after, .cf::before{
+    display: table;
+    content: " ";
+}
+
+.cf{ *zoom: 1; }
+
+.cf::after{ clear: both; }
+
+
+    
+
+/* Start Styling */
+body {
+    background-color: lightgoldenrodyellow;
+    padding: 15px 30px 50px;
+    font-family: 'Alata', sans-serif;
+}
+
+.MainLayout {
+    width: 100%;
+    display: grid;
+}
+
+/* Header Style */
+header {
+    font-family: 'Oswald', sans-serif;
+    display: grid;
+    grid-template-areas:    "hero hero feature-1"
+                            "hero hero feature-2";
+
+    border: 10px solid white;
+}
+
+.Hero {
+    grid-area: hero;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 350px;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: -1px 2px 1px black;
+    background-image: url(./../src/Images/IMG_HeroImage.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.Hero * {
+    display: none;
+}
+
+.features {
+    background-color: black;
+    color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: -1px 2px 1px black;
+}
+
+.feature-1 {
+    grid-area: feature-1;
+    background-image: url(./../src/Images/Feature-1.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.feature-2 {
+    grid-area: feature-2;
+    background-image: url(./../src/Images/Feature-2.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.price {
+    font-size: 3em;
+    margin: 10px;
+    font-weight: 200;
+}
+
+
+/* Nav Style */
+nav {
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin: 10px 0;
+}
+
+nav .brand {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bolder;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+}
+
+nav ul a {
+    display: block;
+    background-color: teal;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul a.selected {
+    background-color: #777;
+}
+
+/* Menu Toggle */
+.menu-toggle {
+    display: none;
+}   
+
+/* Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    margin: 40px 0;
+}
+
+.services .services-item {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 10%);
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.services .services-item h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+.services .services-item p {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Image Gallery */
+.image-gallery h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+
+.image-gallery .ContainerGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));    
+}
+
+
+
+/* Reponsive Breakpoint */
+@media screen and (max-width:1024px){
+    nav {
+        order: inherit;
+        grid-template-columns: 1fr;
+    }
+
+    nav .brand {
+        display: none;
+    }
+
+    .Hero * {
+        display: block;
+    }
+}
+
+@media screen and (max-width:768px){
+    body {
+        padding-top: 10px;
+    }
+
+    nav{
+        order: -1;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        background-color: #333;
+        position: fixed;
+        z-index: 99;
+        grid-template-columns: 1fr;
+        align-content: space-around;
+        gap: 0;
+        top: 0; right: 0; left: 0;
+        height: 0;
+        opacity: 0;
+
+        transition: all 1s;
+    }
+
+    nav ul li a{
+        height: 0;
+        padding: 0;
+    }
+
+    nav .brand {
+        display: inline-block;
+    }
+
+    .Hero {
+        background-position-x: 8%;
+    }
+
+    .Hero * {
+        display: none;
+    }
+
+    .menu-toggle {
+        position: relative;
+        z-index: 100;
+        display: inline-block;
+        box-sizing: border-box;
+    
+        opacity: 1;
+    }    
+
+    .menu-toggle input {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        opacity: 0;    
+        cursor: pointer;
+    }
+    
+    .menu-toggle img {
+        content:url("./../src/Images/IC_NAV_Menu.png");
+        filter: invert(100%);
+    }
+    
+    .menu-toggle input:checked ~ img{
+        content:url("./../src/Images/IC_NAV_Close.png");        
+        transform: scale(0.8);
+        filter: invert(0);
+    }
+    
+    .Slide {
+        height: 100vh;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:576px){
+    header {
+        grid-template:  "hero" 2fr
+                        "feature-1" 0.75fr
+                        "feature-2" 0.75fr;
+    }
+
+    .Hero {
+        background-position-x: 1%;
+    }
+
+    .image-gallery .ContainerGrid {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));    
+    }
+}
+
+
+
+

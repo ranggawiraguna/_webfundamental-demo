@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/__tools.css">
+    <link rel="stylesheet" href="./../css/11 - Transition.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transition</title>
+    </head>
+    
+    <body>
+        <header> TRANSITION </header>
+        <!-- <property> <duration> <timing-function> <delay> -->
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h2> Basic Transition </h2>
+                <p> (Properti ini dapat membuat suatu layout memiliki transisi sebanyal detik yang ditentukan ketika terjadi suatu perubahan pada layout tersebut) </p>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="LayoutParent">
+                <h2> Transition :: Solution Buffering </h2>
+                <p> (Pada layer sebelumnya transition terjadi buffer atau patah patah saat berjalan) </p>
+                <p> (Masalah pada transition tersebut dapat ditanggulangi dengan cara membuat div sebagai container layout yang mempunyai transition) </p>
+                <p> (sehingga hover ditujukan kepada container tersebut tetapi yang diberi transisi adalah childnya atau layout transisinya) </p>
+                <p> (lebih jelasnya container-transition tidak berubah saat di hover, tetapi perubah diarahkan kepada childnya) </p>
+                <div>
+                    <div class="container-transition">
+                        <div></div>                        
+                    </div>
+                    <div class="container-transition">
+                        <div></div>                        
+                    </div>
+                    <div class="container-transition">
+                        <div></div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="LayoutParent">
+                <h2> Transition :: Selected Selector </h2>
+                <p> (Transition dapat diarah ke selector tertentu, jadi hanya selector yang di dekalarasikan saja yang mendapat transition) </p>
+                <div>
+                    <div class="container-transition">
+                        <div></div>                        
+                    </div>
+                    <div class="container-transition">
+                        <div></div>                        
+                    </div>
+                    <div class="container-transition">
+                        <div></div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="LayoutParent">
+                <h2> Transition :: Timing Function </h2>
+                <p> (Properti ini membuat dapat efek dari transisi yang dijalankan sesuai dengan efek yang ditentukan) </p>
+                <div>
+                    <div class="container-transition">
+                        <div> eese </div>                        
+                    </div>
+                    <div class="container-transition">
+                        <div> ease-in </div>                        
+                    </div>
+                    <div class="container-transition">
+                        <div> ease-out </div>                        
+                    </div>
+                    <div class="container-transition">
+                        <div> ease-in-out </div>                        
+                    </div>
+                    <div class="container-transition">
+                        <div> linear </div>                        
+                    </div>
+                    <div class="container-transition">
+                        <div> cubic-bezier </div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="LayoutParent">
+                <h2> Transition :: Delay </h2>
+                <p> (Properti ini mengatur warktu jeda sebelum dimulainya transisi) </p>
+                <div>
+                    <div class="container-transition">
+                        <div> </div>                        
+                        <div> </div>                        
+                        <div> </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </body>
+</html>
+
+
+
+
+

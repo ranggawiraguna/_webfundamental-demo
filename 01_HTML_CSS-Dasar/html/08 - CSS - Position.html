@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./../css/08 - CSS - Position.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Position</title>
+    </head>
+
+    <body>
+        <!-- Default position for tags is static-->
+        <!-- Default z-index pada layout non-static akan ditentukan dari urutan pendeklarasian tagnya -->
+
+        <!-- Sticky == layout melayang yang menetap tetapi posisinya pada halaman web (static) tetap dianggap -->
+        <header>
+            <h1 class="header"> POSITION </h1>
+            <p> *this layout position is sticky</p>
+        </header>
+
+        <!-- Fixed == layout melayang yang berbeda dimensi, artinya posisi pada halaman web (static) tidak dianggap -->
+        <div id="bottomNavigation">
+            <center> <img src="https://i.pinimg.com/originals/e5/93/ab/e593ab0589d5f1b389e4dfbcce2bce20.gif" alt="" width="100px" height="100px"> </center>
+            <p> *this layout position is fixed <br> in z-index = 999999999</p>
+        </div>
+
+
+        <!-- Layout dengan posisi static akan berurut secara menurun dari halaman web-->
+        <div id="MainContent">
+
+            <!-- Stack Position 1-->
+            <div class="ParentLayout">
+                <div class="ParentStaticLayout">
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue;"> layout ini gak kena center parent, karena emang dimensinya beda sama parentnya</div>
+                    </div>
+
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue;"> layout ini gak kena center parent, dan juga di gak muncul karena ketiban sama si relative yang dideklarasiin dibawahnya tuh</div>
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                    </div>
+
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue; overflow: scroll;"> layout ini gak kena center parent, tapi dibawah dimensinya ada sebuah layout static/relative, jadi kaya kena center parent padahal engga </div>
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                    </div>
+
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue;"> layout ini gak kena center parent, dan juga di gak muncul karena ketiban sama si relative yang dideklarasiin dibawahnya tuh</div>
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                    </div>
+
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue;"> layout ini kena center parent, karena dibawah dimensinya ada sebuah layout static/relative </div>
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stack Position 2-->
+            <div class="ParentLayout">
+                <div class="ParentRelativeLayout">
+                    <p style="color: aliceblue; position: absolute; top:0; font-size: 14px;"> 
+                        Layout ini normal ya karena relative masih nempel sama static, teks ini juga normal karena teks ini absolute dan parentnya relative jadi ya masih bisa nempel absolute ke relative. <br>
+                        Buat div dari setiap content juga normal karena div nya itu static jadi masih nempel sama parent yang relative. <br>
+                        Tapi kalo diliat teks ini gak ngambil tempat di parent, karena teks ini absolute jadinya dia seakan terbang dan di parentnya dianggap gak ada, <br> tapi posisi nya dia tetep ada didalem ParentRelativeLayout <br>
+                    </p>       
+
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue;"> layout ini gak kena center parent, karena emang dimensinya beda sama parentnya</div>
+                    </div>
+
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue;"> layout ini gak kena center parent, dan juga di gak muncul karena ketiban sama si relative yang dideklarasiin dibawahnya tuh</div>
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                    </div>
+
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue; overflow: scroll;"> layout ini gak kena center parent, tapi dibawah dimensinya ada sebuah layout static/relative, jadi kaya kena center parent padahal engga </div>
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                    </div>
+
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue;"> layout ini gak kena center parent, dan juga di gak muncul karena ketiban sama si relative yang dideklarasiin dibawahnya tuh</div>
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                    </div>
+
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue;"> layout ini kena center parent, karena dibawah dimensinya ada sebuah layout static/relative </div>
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                    </div>
+                </div>        
+            </div>
+            
+            <br> <br> <br> <br>
+
+            <!-- Stack Position 3-->
+            <div class="ParentLayout">
+                <div class="ParentAbsoluteLayout">
+                    <p style="color: aliceblue; position: absolute; top:0;"> 
+                        Layout ini keluar dari parentnya yang static, karena emang absolute layout itu dimensi / lapisannya gak nempel sama static. <br>
+                        Kalo diliat juga centernya si div content itu ke tegah ParentLayout, bukan ke ParentAbsoluteLayout. <br>
+                        Artinya setiap div content ngambil parentnya itu sebenernya si parent yang hijau itu, <br> 
+                        karena kan div nya si content itu dia static beda dimensi sama ParentAbsoluteLayout <br>
+                        Nah kalo teks ini tuh masuknya ke ParentAbsoluteLayout karena si tag teks ini dia juga absolute posisinya.
+                    </p>       
+
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue;"> layout ini gak kena center parent, karena emang dimensinya beda sama parentnya</div>
+                    </div>
+
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue;"> layout ini gak kena center parent, dan juga di gak muncul karena ketiban sama si relative yang dideklarasiin dibawahnya tuh</div>
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                    </div>
+
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue; overflow: scroll;"> layout ini gak kena center parent, tapi dibawah dimensinya ada sebuah layout static/relative, jadi kaya kena center parent padahal engga </div>
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                    </div>
+
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue;"> layout ini gak kena center parent, dan juga di gak muncul karena ketiban sama si relative yang dideklarasiin dibawahnya tuh</div>
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                    </div>
+
+                    <div style="display: inline-block; margin: 0px 10px;"> 
+                        <div class="RelativeLayout" style="width:120px; height:120px"></div>
+                        <div class="AbsoluteLayout" style="width:120px; height:120px; text-align: center; color: aliceblue;"> layout ini kena center parent, karena dibawah dimensinya ada sebuah layout static/relative </div>
+                        <div class="StaticLayout" style="width:120px; height:120px"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

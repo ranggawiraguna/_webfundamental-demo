@@ -1,0 +1,58 @@
+body {
+    font-family: 'Product Sans';
+    background-color: #FFFBDF;
+    margin: auto;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #B5768A;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}
+
+#MainContent {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    margin: auto;
+    padding: 20px 30px 20px 30px;
+}
+
+#p1 {
+    color: red;
+}
+
+#p2 {
+    text-align: center;
+}
+
+#p3 {
+    text-indent: 30px;    
+}
+
+#p4 {
+    text-decoration: underline;    
+}
+
+#p5 {
+    text-transform: capitalize;    
+}
+
+#p6 {
+    letter-spacing: 10px;    
+}
+
+#p7 {
+    word-spacing: 20px;
+}
+
+

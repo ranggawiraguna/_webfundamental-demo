@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/05 - DOM-PreventDefault.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Prevent Default</title>
+    </head>
+    
+    <body>
+        <header> DOM PREVENT DEFAULT </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h3> PreventDefault </h3>
+                <p> (Method ini akan menghilangkan aksi default yang ada pada suatu elemnt) </p>
+                <p> (Sebagai gantinya kita memberikan aksi tersendiri ke element tersebut) </p>
+                <div class="ContainerLayer">
+                    <div>
+                        <div class="Card">
+                            <span class="image">😎</span>
+                            <span>
+                                <p class="name">Agus</p>
+                                <p class="number">(0812345678)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😁</span>
+                            <span>
+                                <p class="name">Udin</p>
+                                <p class="number">(0818293912)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😝</span>
+                            <span>
+                                <p class="name">Otong</p>
+                                <p class="number">(0891238198)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">🧐</span>
+                            <span>
+                                <p class="name">Ucup</p>
+                                <p class="number">(0891289282)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <p> Click icon paint for change background parent</p>
+                        <p> (Pada bagian ini terdapar problem, dikarenakan btn dibuat dengan tag a maka defaultnya dia memiliki attribut href ke suatu halaman) </p>
+                    </div>
+                    <div>
+                        <p> Solusi dari masalah diatas dapat diatasi dengan menghilangkan aksi default pada a yaitu menghilangkan load ulang halaman html itu sendiri, dilakukan dengan menggunakan method preventDefault() </p>
+
+                        <div class="Card">
+                            <span class="image">😎</span>
+                            <span>
+                                <p class="name">Agus</p>
+                                <p class="number">(0812345678)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😁</span>
+                            <span>
+                                <p class="name">Udin</p>
+                                <p class="number">(0818293912)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">😝</span>
+                            <span>
+                                <p class="name">Otong</p>
+                                <p class="number">(0891238198)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                        <div class="Card">
+                            <span class="image">🧐</span>
+                            <span>
+                                <p class="name">Ucup</p>
+                                <p class="number">(0891289282)</p>
+                            </span>
+                            <a href="" class="btn">🎨</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/05 - DOM-PreventDefault.js"></script>
+</html>

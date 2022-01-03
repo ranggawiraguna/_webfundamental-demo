@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/04 - VAR-LET-CONST.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Var , Let , Const</title>
+    </head>
+    
+    <body>
+        <header> VAR , LET , CONST </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <h3> VAR </h3>
+                <p> (tipe variable dengan var akan membuat variable menerapkan proses hoisting yang ada pada javascript) </p>
+                <p> (tipe variable ini tidak efektif karena variable var akan dideklarasikan telebih dahulu dengan nilai undefined) </p>
+                <p> (kita dapat langsung mengakses variable var walaupun dideklarasikan di setelah statement pemanggilannya) </p>
+                <div>
+                    
+                </div>
+            </div>
+            <div class="LayoutParent">
+                <h3> LET </h3>
+                <p> (tipe variable ini tidak menerapkan proses hoisting, karena variable let harus dideklarasikan terlebih dahulu sebelum dipanggil, jika tidak maka akan menghasilnya statement error) </p>
+                <p> (tipe variable ini lebih efektif, dan juga proses pembuatannya seperti bahasa pemrograman lainnya sehingga tidak mengbingungkan programmer) </p>
+                <div>
+
+                </div>
+            </div>
+            <div class="LayoutParent">
+                <h3> CONST </h3>
+                <p> (tipe ini sama seperti let yang tidak menerapkan proses hoisting, hanya saja value dari tipe variable ini tidak dapat dirubah (fix)) </p>
+                <p> (value dari variable ini tidak dapat dirubah kecuali, jika variable const bertipe array atau object, kita masih dapat mengubah nilai index dari array atau nilai attribut dari object) </p>
+                <div>
+
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/04 - VAR-LET-CONST.js"></script>
+</html>

@@ -1,0 +1,68 @@
+body {
+    font-family: 'Product Sans';
+    background-color: #FFFBDF;
+    margin: auto;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #B5768A;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}
+
+#MainContent {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    margin: auto;
+    padding: 20px 30px 20px 30px;
+}
+
+.layoutBackground {
+    background-color: white;
+    display: flex;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 20px;
+    height: 500px;
+    margin: 40px;
+    padding: 20px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+
+}
+
+.layoutBackground#backgroundColor {
+    background-color: teal;
+    background-color: #008080;
+    background-color: rgb(0, 128, 128);
+}
+
+.layoutBackground#backgroundImage {
+    background-image: url(./../Pictures/Background.jpg);
+    background-size: cover;
+}
+
+.layoutBackground#backgroundPosition {
+    background-image: url(./../Pictures/Background.jpg);
+    background-size: cover;
+    background-position: center center; 
+}
+
+.layoutBackground#backgroundRepeat {
+    background-image: url(./../Pictures/Background.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+

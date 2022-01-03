@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/Home.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SSUNDAYY©</title>
+    </head>
+    <body>
+        <div class="MainLayout">
+            <header>
+                <div class="Hero">
+                    <h2> SUNDAY SUNDAY CO</h2>
+                    <p> Brand clothes with the theme of ice cream </p>
+                </div>
+                <div class="features feature-1">
+                    <h4 class="price">IDR 350K </h4>
+                    <p class="item"> Hoodie </p>
+                </div>
+                <div class="features feature-2">
+                    <h4 class="price">IDR 185k </h4>
+                    <p class="item"> T-Shirt </p>
+                </div>
+            </header>
+
+            <nav>
+                <div class="brand">
+                    <h1> SSUNDAYY© </h1>
+                </div>
+                <ul>
+                    <li><a href="#" class="selected">HOME</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <input type="checkbox">
+                    <img height="50px" width="50px">
+                </div> 
+            </nav>
+
+            <section class="services">
+                <div class="services-item">
+                    <img src="./../src/Images/IC_AboutUs.png" alt="" width="30%">
+                    <h2> About Us </h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, laudantium.</p>
+                </div>
+                <div class="services-item">
+                    <img src="./../src/Images/IC_Blog.png" alt="" width="30%">
+                    <h2> Blog </h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, laudantium.</p>
+                </div>
+                <div class="services-item">
+                    <img src="./../src/Images/IC_FAQs.png" alt="" width="30%" style="transform: scale(2);">
+                    <h2> FAQs </h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, laudantium.</p>
+                </div>
+                <div class="services-item">
+                    <img src="./../src/Images/IC_OrderTracking.png" alt="" width="30%">
+                    <h2> Order Tracking </h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, laudantium.</p>
+                </div>
+            </section>
+
+            <section class="image-gallery">
+                <h2> Image Gallery </h2>
+                <ul class="ContainerGrid">
+                    <li><img src="./../src/Images/Product-1.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-2.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-3.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-4.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-5.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-6.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-7.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-8.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-9.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-10.jpg" width="100%" style="display: block;"></li>
+
+                    <li><img src="./../src/Images/Product-1.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-2.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-3.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-4.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-7.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-8.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-9.jpg" width="100%" style="display: block;"></li>
+                    <li><img src="./../src/Images/Product-10.jpg" width="100%" style="display: block;"></li>
+                </ul>
+            </section>
+        </div>
+
+        <script>
+            (document.querySelector(".menu-toggle input")).addEventListener("click", () => {
+                (document.querySelector("nav ul")).classList.toggle("Slide");
+            });
+        </script>
+
+    </body>
+</html>

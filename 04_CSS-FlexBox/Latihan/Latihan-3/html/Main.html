@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/Main.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bacotan</title>
+    </head>
+    <body>
+        <nav>
+            <div id="Logo">
+                <img src="./../src/Images/Logo.png" alt="@ranggapx_" width="100%">
+            </div>
+            
+            <ul id="NavigationMenu-Normal" class="NavigationMenu">
+                <li><a href="#HomePage"> Home </a></li>
+                <li><a href="#ProductsPage"> Products </a></li>
+                <li><a href="#SevicesPage"> Services </a></li>
+                <li><a href="#ContacsPage"> Contacts </a></li>
+                <li><a href="#AboutPage"> About </a></li>
+            </ul>
+
+            <div id="MenuToggle">
+                <input type="checkbox">
+                <img height="100%">
+            </div>
+        </nav>
+
+        <ul id="NavigationMenu-Mobile" class="NavigationMenu">
+            <li><a href="#HomePage" onclick='(document.querySelector("#MenuToggle input")).click()'> Home </a></li>
+            <li><a href="#ProductsPage" onclick='(document.querySelector("#MenuToggle input")).click()'> Products </a></li>
+            <li><a href="#SevicesPage" onclick='(document.querySelector("#MenuToggle input")).click()'> Services </a></li>
+            <li><a href="#ContacsPage" onclick='(document.querySelector("#MenuToggle input")).click()'> Contacts </a></li>
+            <li><a href="#AboutPage" onclick='(document.querySelector("#MenuToggle input")).click()'> About </a></li>
+        </ul>
+
+        <div id="MainContent">
+            <div id="HomePage" class="Page">
+                <div>
+                    HOME PAGE
+                </div>
+            </div>
+            <div id="ProductsPage" class="Page">
+                <div>
+                    PRODUCTS PAGE                    
+                </div>
+            </div>
+            <div id="SevicesPage" class="Page">
+                <div>
+                    SERVICES PAGE
+                </div>
+            </div>
+            <div id="ContacsPage" class="Page">
+                <div>
+                    CONTACS PAGE
+                </div>
+            </div>
+            <div id="AboutPage" class="Page">
+                <div>
+                    ABOUT PAGE                    
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        (document.querySelector("#MenuToggle input")).addEventListener("click", () => {
+            (document.getElementById("NavigationMenu-Mobile")).classList.toggle("Slide");
+        });
+
+        window.location.href = "#HomePage"
+    </script>
+</html>
+

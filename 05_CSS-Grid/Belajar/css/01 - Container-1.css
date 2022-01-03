@@ -1,0 +1,168 @@
+
+body {
+    background-color: #68CEFF;
+    margin: auto;
+    font-family: 'Alata', sans-serif;
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: teal;
+    padding: 20px;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    z-index: 9999999;
+}
+
+#MainLayout {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 10%;
+    padding-bottom: 50px;
+}
+
+.LayoutParent {
+    background-color: rgba(100, 250, 200, 80%);
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin: 20px 0;
+}
+
+.LayoutParent * {
+    margin: 0;
+}
+
+.LayoutParent > div {
+    margin: 20px 50px 10px;
+    padding: 15px 50px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 50%);
+    border-radius: 50px;
+    border: 2px solid lightcyan;
+}
+
+.LayoutParent h2, .LayoutParent p {
+    text-align: center;
+}
+
+.LayoutParent h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.LayoutParent p {
+    color: white;
+    margin: 2px;
+}
+
+.ContainerGrid {
+    margin: 30px auto;
+    box-sizing: border-box;
+    display: grid;
+    width: 100%;
+    border: 3px solid black;
+}
+
+.ContainerGrid > div {
+    background-color: lightgoldenrodyellow;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.ContainerGrid > div:nth-child(even) {
+    background-color: lightskyblue;
+}
+
+/* Start Styling */
+    /* Section Layer */
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(1) {
+            grid-template-columns: 25% auto 100px;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(2) {
+            grid-template-columns: 25% auto 100px;
+            grid-template-rows: 100px;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(3) {
+            grid-template-columns: 25% auto 100px;
+            grid-template-rows: 100px 70px auto;
+        }
+
+        .LayoutParent:nth-child(1) .ContainerGrid:nth-child(4) {
+            grid-template-columns: 25% auto 100px;
+            grid-template-rows: 100px 70px auto;
+        }
+    /* End Section Layer */
+
+    /* Section Layer */
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(1){
+            grid-template-columns: 20% 100px auto;
+            grid-template-rows: 50px 75px;
+            grid-auto-rows: 200px;
+        }
+
+
+        .LayoutParent:nth-child(2) .ContainerGrid:nth-child(2){
+            grid-template-columns: 20% auto;
+            grid-template-rows: 50px 75px 50px;
+            grid-auto-rows: 200px;
+        }
+    /* End Section Layer */
+
+    /* Section Layer */
+        .LayoutParent:nth-child(3) .ContainerGrid:nth-child(1){
+            grid-template-columns: 20% 100px auto;
+            grid-template-rows: 50px 75px;
+            grid-auto-flow: row;
+        }
+
+        .LayoutParent:nth-child(3) .ContainerGrid:nth-child(2){
+            grid-template-columns: 20% 100px auto;
+            grid-template-rows: 50px 75px;
+            grid-auto-flow: column;
+        }
+
+        .LayoutParent:nth-child(3) .ContainerGrid:nth-child(3){
+            grid-template-rows: 50px 75px;
+            grid-auto-flow: row;
+        }
+
+
+        .LayoutParent:nth-child(3) .ContainerGrid:nth-child(4){
+            grid-template-columns: 50px 75px;
+            grid-auto-flow: column;
+        }
+    /* End Section Layer */
+
+    /* Section Layer */
+        .LayoutParent:nth-child(4) .ContainerGrid {
+            height: 250px;
+        }
+
+        .LayoutParent:nth-child(4) .ContainerGrid:nth-child(1){
+            grid-template-columns: 1fr 2.5fr 3fr;
+            grid-template-rows: 1fr 2fr 1.5fr;
+        }
+
+        .LayoutParent:nth-child(4) .ContainerGrid:nth-child(2){
+            grid-template-columns: 1fr 2fr 1.5fr;
+            grid-template-rows: 1fr 2.5fr 3fr;
+        }
+    /* End Section Layer */
+
+/* End Styling */

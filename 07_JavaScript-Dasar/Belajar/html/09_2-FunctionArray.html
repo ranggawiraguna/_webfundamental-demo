@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./../css/09_2-FunctionArray.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array</title>
+    </head>
+    
+    <body>
+        <header> FUNCTION ARRAY </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">                
+                <h3> Join </h3>
+                <p> (Method ini dapat menggabungkan semua isi array menjadi satu string) </p>
+                <p> (Defaultnya isi array akan digabung dan dipisahkan dengan koma, tetapi kita dapat merubahnya dengan mengirim parameter pada saat memanggil join) </p>
+                <div class="SectionBlockContent">
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>                    
+                    <button onclick="event_layer1()"> SHOW ARRAY </button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">                
+                <h3> Push & Pop </h3>
+                <p> (Method ini dapat memanupulasi isi array pada index terakhir) </p>
+                <p> (Push digunakan untuk menambahkan, sedangkan Pop digunakan untuk menghapus) </p>
+                <div class="SectionBlockContent">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>                    
+                    <button onclick="event_layer2()"> SHOW ARRAY </button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">                
+                <h3> Unshift & Shift </h3>
+                <p> (Method ini dapat memanupulasi isi array pada index pertama) </p>
+                <p> (Unshift digunakan untuk menambahkan, sedangkan Shift digunakan untuk menghapus) </p>
+                <div class="SectionBlockContent">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>                    
+                    <button onclick="event_layer3()"> SHOW ARRAY </button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">                
+                <h3> Splice </h3>
+                <p> (Method ini dapat memanipulasi isi array pada bagian index tertentu) </p>
+                <p> (dapat digunakan untuk menghapus elemen, maupun menambahkan elemen pada indeks tertentu) </p>
+                <div class="SectionBlockContent">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>                    
+                    <button onclick="event_layer4()"> SHOW ARRAY </button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">                
+                <h3> Slice </h3>
+                <p> (Method ini dapat memotong/mengambil beberapa bagian index yang terurut pada array) </p>
+                <p> (Method ini tidak merubah isi pada array tetapi meng-copy nya sesuai index slice yang ditentukan) </p>
+                <div class="SectionBlockContent">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>                    
+                    <button onclick="event_layer5()"> SHOW ARRAY </button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">                
+                <h3> ForEach </h3>
+                <p> (Method ini dapat melakukan perulangan ke semua elemen yang ada pada array) </p>
+                <p> (Method ini hanya menelusuri semua elemen array, tetapi tidak mengembalikan apapun setelahnya) </p>
+                <div class="SectionBlockContent">
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>                    
+                    <button onclick="event_layer6()"> SHOW ARRAY </button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">                
+                <h3> Map </h3>
+                <p> (Method ini dapat melakukan perulangan ke semua elemen yang ada pada array) </p>
+                <p> (Method ini akan mengembalikan array baru hasil dari perulangan pada array yang di looping) </p>
+                <p> (Jika pada looping setiap elemen array dirubah maka map akan mengembalikan nilai perbahan nya tersebut dalam bentuk array juga) </p>
+                <div class="SectionBlockContent">
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>                    
+                    <button onclick="event_layer7()"> SHOW ARRAY </button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">                
+                <h3> Sort </h3>
+                <p></p>
+                <div class="SectionBlockContent">
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>                    
+                </div>
+                <div class="SectionBlockContent">
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>                    
+                </div>
+                <button onclick="event_layer8()"> SHOW ARRAY </button>
+            </div>
+
+            <div class="LayoutParent">                
+                <h3> Filter </h3>
+                <p> (Method ini dapat mencari beberapa elemen yang sesuai dengan ketentuan pada filter) </p>
+                <p> (Method ini akan mengembalikan sebuah array berisi elemen yang sesuai dengan ketentuan) </p>
+                <div class="SectionBlockContent">
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>                    
+                    <button onclick="event_layer9()"> SHOW ARRAY </button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">                
+                <h3> Find </h3>
+                <p> (Method ini dapat mencari satu elemen yang sesuai dengan ketentuan pada filter) </p>
+                <p> (Method ini akan mengembalikan satu nilai yang sesuai dengan ketentuan) </p>
+                <div class="SectionBlockContent">
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>                    
+                    <button onclick="event_layer10()"> SHOW ARRAY </button>
+                </div>
+            </div>
+
+            <div class="LayoutParent">                
+                <h3> FindIndex </h3>
+                <p> (Sama halnya dengan find, akan tetapi method ini mengembalikan index dari elem yang didapat bukan elemen itu sendiri) </p>
+                <div class="SectionBlockContent">
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>                    
+                    <button onclick="event_layer11()"> SHOW ARRAY </button>
+                </div>
+            </div>
+
+            <div id="FlowPage">
+                <div>
+                    <img src="./../src/Images/IC_PreviousPage.png" onclick="location.href='./09_1-Array.html';" width="80px" height="80px">
+                    <p> PREVIOUS </p>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/09_2-FunctionArray.js"></script>
+</html>

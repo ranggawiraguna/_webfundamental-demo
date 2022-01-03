@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./../css/08_4-Declaration&Expression.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Function</title>
+    </head>
+    
+    <body>
+        <header> Declaration & Expression </header>
+
+        <div id="MainLayout">
+            <div class="LayoutParent">
+                <div class="SectionBlockContent">
+                    <h3> Function Declaration </h3>
+                    <p> (Function yang dideklarasikan secara langsung dan dapat dipanggil sebelum atau sesudah function ini dideklarasikan) </p>
+                    <p> (Berdasarkan cara pemanggilannya function ini bisa dibilang lebih fleksibel) </p>
+                    <div>
+                        <br>
+                        <button onclick="event_layer1()"> SHOW ALERT </button>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="LayoutParent">
+                <div class="SectionBlockContent">
+                    <h3> Function Expression </h3>
+                    <p> (Function yang dideklarasikan tanpa nama tetapi disimpan pada sebuah variable) </p>
+                    <p> (Function ini hanya dapat dipanggil setelah pendeklarasian variable yang menyimpan dfunction tersebut) </p>
+                    <p> (Berdasarkan kinerjanya function ini lebih powerfull, misalnya dapat dijadikan sebuah argument pada function lain dengan mengirim variable yang mengirim functionnya) </p>
+                    <div>
+                        <br>
+                        <button onclick="event_layer2()"> SHOW ALERT </button>                        
+                    </div>                    
+                </div>
+            </div>
+            
+            <div id="FlowPage">
+                <div>
+                    <img src="./../src/Images/IC_PreviousPage.png" onclick="location.href='./08_3-Rekursif.html';" width="80px" height="80px">
+                    <p> PREVIOUS </p>
+                </div>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./../js/08_4-Declaration&Expression.js"></script>
+</html>
